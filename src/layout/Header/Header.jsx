@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@mui/material';
 import { Code, ContactPage, Email, Phone, Send } from '@mui/icons-material';
 import { useTheme } from '@emotion/react';
+import { NavLink } from 'react-router-dom';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -24,7 +25,7 @@ const Header = () => {
         <AppBar color='red' sx={{ boxShadow: 0, zIndex: 20, position: 'absolute' }}>
             <Container maxWidth="xxl">
                 <Toolbar disableGutters sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-                    <Box display={{xs:"flex", sm:"none"}}>
+                    <Box display={{ xs: "flex", sm: "none" }}>
                         <Code sx={{
                             color: theme?.palette?.text?.secondary,
                             fontSize: 25,
@@ -55,16 +56,21 @@ const Header = () => {
                         </Typography>
                     </Box>
                     <Box sx={{ display: { xs: "none", md: 'flex' }, flexDirection: "row", ml: -30 }}>
-                        <MenuItem>
-                            <Typography>
-                                About Me
-                            </Typography>
-                        </MenuItem>
-                        <MenuItem>
-                            <Typography >
-                                My Projects
-                            </Typography>
-                        </MenuItem>
+                        <NavLink to={'/'} style={{ textDecoration: "none", color: "white" }}>
+                            <MenuItem>
+                                <Typography>
+                                    About Me
+                                </Typography>
+                            </MenuItem>
+                        </NavLink>
+                        <NavLink to={'/my-projects'} style={{ textDecoration: "none", color: "white" }}>
+                            <MenuItem>
+                                <Typography>
+                                    My Projects
+                                </Typography>
+                            </MenuItem>
+                        </NavLink>
+
                         <MenuItem>
                             <Typography>
                                 Experience
@@ -75,22 +81,22 @@ const Header = () => {
                     <Box>
                         <SpeedDial
                             ariaLabel="SpeedDial basic example"
-                            sx={{ position: 'absolute', right: {xs:-10,sm:10}, top: 10 }}
+                            sx={{ position: 'absolute', right: { xs: -10, sm: 10 }, top: 10 }}
                             icon={<Send />}
                             direction='down'
                             FabProps={{
                                 size: 'small', // Reduce the size of the button
-                                sx: { 
-                                    width: {xs:30,sm:40}, 
-                                    height: {xs:30,sm:40}, 
-                                    backgroundColor:"transparent",
-                                    '&:focus': { 
-                                        outline: 'none', 
-                                        boxShadow: 'none', 
-                                        backgroundColor:'transparent' 
-                                    }, 
-                                },  
-                                disableRipple:true
+                                sx: {
+                                    width: { xs: 30, sm: 40 },
+                                    height: { xs: 30, sm: 40 },
+                                    backgroundColor: "transparent",
+                                    '&:focus': {
+                                        outline: 'none',
+                                        boxShadow: 'none',
+                                        backgroundColor: 'transparent'
+                                    },
+                                },
+                                disableRipple: true
                             }}
                         >
                             {actions.map((action) => (
