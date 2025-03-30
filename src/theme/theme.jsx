@@ -19,7 +19,7 @@ document.head.appendChild(styleSheet);
 export const theme = createTheme({
   palette: {
     text: {
-      primary: 'white', // Default text color is white
+      primary: '#ffff', // Default text color is white
       secondary:"#FFD700"
     },
     background: {

@@ -1,0 +1,34 @@
+import { Grid } from '@mui/material'
+import React from 'react'
+import GradientText from '../../components/Text/GradientText'
+import { MyWhatIDoList } from '../../data/MyWhatIDoList'
+import WhatIDoCard from '../../components/Cards/WhatIDoCard'
+import { useTheme } from '@emotion/react'
+import { useTranslation } from 'react-i18next'
+
+const WhatIDo = () => {
+    const theme = useTheme()
+    const { t: title } = useTranslation('home');
+    const { t: whatIDo } = useTranslation('whatIDo');
+    const whatIDoList = whatIDo('whatIDo', { returnObjects: true })
+    return (
+        <Grid container item>
+            <Grid item xs={12}>
+                <GradientText color={theme?.palette?.text?.secondary} textAlign={'center'}>
+                    {title('sections.whatIDo')}
+                </GradientText>
+            </Grid>
+            <Grid container sx={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: { xs: 2, md: 10 }, my: 4 }}>
+                {
+                    whatIDoList.map((whatIDo, index) =>
+                        <Grid item xs={12} lg={3} key={index} sx={{ display: 'flex', flexDirection: "row", justifyContent: "center" }}>
+                            <WhatIDoCard icon={whatIDo.icon} text={whatIDo.text} title={whatIDo.title} />
+                        </Grid>
+                    )
+                }
+            </Grid>
+        </Grid>
+    )
+}
+
+export default WhatIDo   

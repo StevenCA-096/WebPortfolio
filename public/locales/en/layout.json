@@ -1,0 +1,9 @@
+{
+    "aboutMe": "About Me",
+    "myProjects": "My Projects",
+    "experience":"Experience",
+    "changeLanguage":{
+        "toEn":"Change to English",
+        "toEs":"Change to Spanish"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "title": "Mis Proyectos",
+    "myProjects": [
+        {
+            "title": "Sistema de Ventas en Línea para Coopepilangosta",
+            "description": "Durante este proyecto, pude colaborar con un equipo para desarrollar un sistema de ventas en línea con las funcionalidades esenciales y controles requeridos para una aplicación de esta naturaleza. Algunas de estas características incluyen:",
+            "skills": [
+                {
+                    "icon": "Done",
+                    "details": "Control de Inventario: Gestiona el stock de productos y diversos casos como ventas, pérdida de productos por vencimiento o donaciones donde el producto sale del inventario por una razón diferente a una venta. También rastrea la llegada de nuevos productos."
+                },
+                {
+                    "icon": "People",
+                    "details": "Gestión de Usuarios: Administra los usuarios del sistema, utilizando JWT para verificar identidades y otorgar acceso a las funcionalidades correspondientes según los roles de usuario."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reportes: Muestra información esencial sobre ventas, como ventas por producto, tendencias estacionales, etc."
+                }
+            ]
+        },
+        {
+            "title": "Sistema de Matrícula para el CTP Hojancha",
+            "description": "Este proyecto tenía como objetivo permitir un proceso de matrícula digital en lugar de uno presencial. Durante este proyecto freelance, mi equipo y yo analizamos y recopilamos requisitos para implementar las funcionalidades deseadas, que incluyen:",
+            "skills": [
+                {
+                    "icon": "List",
+                    "details": "Formulario de Matrícula: Creación de un formulario donde los estudiantes podían seleccionar su sección de acuerdo con su nivel, completar su información y la de su responsable, y subir documentos como identificaciones, certificados de estudios previos y políticas institucionales."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reportes: Generación de informes para obtener datos clave como estudiantes por sección, crecimiento de la matrícula en comparación con años anteriores, estudiantes por género, etc."
+                },
+                {
+                    "icon": "Create",
+                    "details": "Mantenimiento de Matrículas: Permite gestionar y actualizar las inscripciones de los estudiantes según las necesidades institucionales."
+                }
+            ]
+        },
+        {
+            "title": "Plataforma AF",
+            "description": "Este proyecto fue desarrollado para la aseguradora AF Seguros por la empresa Northtec. Las tecnologías utilizadas fueron ReactJS con Firebase para almacenamiento de datos, gestión de archivos y autenticación. El propósito de este proyecto era manejar operaciones principales como cotizaciones de seguros, comisiones de ventas, catálogo de productos y gestión de relaciones con los clientes.",
+            "skills": [
+                {
+                    "icon": "Timer",
+                    "details": "Uso de sockets de Firebase (snapshots) para establecer comunicación en tiempo real."
+                },
+                {
+                    "icon": "ChangeCircle",
+                    "details": "Creación de formularios dinámicos que admiten actualizaciones de campos sin necesidad de modificar el código."
+                },
+                {
+                    "icon": "Speed",
+                    "details": "Optimización de consultas para mantener Firebase dentro del límite de solicitudes gratuitas, evitando costos adicionales y mejorando la experiencia del usuario."
+                }
+            ]
+        },
+        {
+            "title": "AF AI Wrapper",
+            "description": "El propósito de este envoltorio de IA fue crear diversas funcionalidades utilizando Gemini para algunas aplicaciones de AF Seguros, como AllSports+ (una aplicación de fitness) y el sitio web de AF. Se utilizó ReactJS para el frontend y ExpressJS para desarrollar una API REST que gestiona el servicio de Gemini y las solicitudes.",
+            "skills": [
+                {
+                    "icon": "FitnessCenter",
+                    "details": "Generación de rutinas personalizadas con Gemini AI, considerando parámetros proporcionados por el usuario, como altura, peso, objetivos, limitaciones físicas, equipo disponible, tiempo disponible y más."
+                }
+            ]
+        },
+        {
+            "title": "Sitio Web de AF",
+            "description": "Este proyecto fue desarrollado para actualizar el sitio web anterior de AF Seguros utilizando tecnologías modernas como ReactJS, ExpressJS y Firebase, proporcionando una apariencia más fresca y funcional. El sitio web incluyó las siguientes características:",
+            "skills": [
+                {
+                    "icon": "Security",
+                    "details": "Autocotización de Seguros: Los usuarios podían cotizar sus pólizas de seguro de forma independiente mediante el catálogo de seguros y su información personal."
+                },
+                {
+                    "icon": "ManageAccounts",
+                    "details": "Autogestión de Seguros: Los usuarios podían administrar sus pólizas, revisar sus recibos, presentar reclamaciones y realizar otras operaciones sin intervención del servicio al cliente."
+                }
+            ]
+        }
+    ]
+}

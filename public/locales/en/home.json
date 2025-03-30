@@ -1,0 +1,8 @@
+{
+    "greeting": "Greetings, I'm",
+    "description": "a software developer, dedicated to web development",
+    "sections": {
+        "skills": "Skills",
+        "whatIDo": "What I Do"
+    }
+}

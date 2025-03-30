@@ -1,0 +1,35 @@
+{
+    "whatIDo": [
+      {
+        "icon": "LockClock",
+        "title": "Comunicación en tiempo real",
+        "text": "Establecí comunicación en tiempo real entre aplicaciones con WebSockets"
+      },
+      {
+        "icon": "Security",
+        "title": "Seguridad",
+        "text": "Gestioné la seguridad de la aplicación y los permisos basados en roles con JWT"
+      },
+      {
+        "icon": "AutoMode",
+        "title": "Automatizar tareas",
+        "text": "Creé jobs en el servidor para automatizar tareas repetitivas y generar copias de seguridad"
+      },
+      {
+        "icon": "DesignServices",
+        "title": "Interfaces de usuario",
+        "text": "Creé interfaces de usuario usando React y diferentes bibliotecas de componentes: MUI, ChakraUI, React-Bootstrap"
+      },
+      {
+        "icon": "Computer",
+        "title": "Lado del servidor",
+        "text": "Creé API RESTful con diferentes frameworks y bases de datos: .NET - SQL Server, NestJS - MySQL"
+      },
+      {
+        "icon": "Repeat",
+        "title": "Experiencia en metodologías ágiles",
+        "text": "Participé en proyectos gestionados con la metodología Scrum"
+      }
+    ]
+  }
+  

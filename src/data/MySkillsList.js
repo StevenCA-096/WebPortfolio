@@ -1,4 +1,4 @@
-export const MySkills = [
+export const MySkillsList = [
     {
       title: 'SQL',
       imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/2560px-Sql_data_base_with_logo.svg.png', // Replace with actual path or URL
@@ -21,6 +21,6 @@ export const MySkills = [
     },
     {
       title: 'ExpressJS',
-      imgUrl: 'https://lh5.googleusercontent.com/proxy/KTMTgxEwIkK5PtvXhl3qRBO_BB797q_ixPFFLP4lLCImNbufF5V6bRvVbBMHSuQ8rF4IiMBjIOW539IuELV-Ir5X7ppI40BUOkd4ytO87v9gDRIgWsm_UXt84aMVd_6v8_pPt_ZACSm-km9RlQ',
+      imgUrl: 'https://cdn.groovetechnology.com/wp-content/uploads/2023/08/expressjs.png',
     },
   ];

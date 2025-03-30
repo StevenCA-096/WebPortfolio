@@ -1,0 +1,8 @@
+{
+    "greeting": "Saludos, soy",
+    "description": "un desarrollador de software, dedicado al desarrollo web",
+    "sections": {
+        "skills": "Habilidades",
+        "whatIDo": "Mi trabajo"
+    }
+}

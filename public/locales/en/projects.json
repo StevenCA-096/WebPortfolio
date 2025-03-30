@@ -1,0 +1,83 @@
+{
+    "title": "Projects I Have Participated In",
+    "myProjects": [
+        {
+            "title": "Online Sales System For Coopepilangosta",
+            "description": "During this project, I was able to collaborate with a team to develop an online sales system with the core functionalities and controls required for an application of this nature. Some of these features include:",
+            "skills": [
+                {
+                    "icon": "Done",
+                    "details": "Inventory Control: Manages product stock and various cases like sales, product loss due to expiration, or giveaways where the product leaves stock for a reason other than a sale. It also tracks new product arrivals."
+                },
+                {
+                    "icon": "People",
+                    "details": "User Management: Manages system users, using JWT to verify identities and grant access to the appropriate functionalities based on user roles."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reports: Displays essential information about sales, such as sales per product, seasonal trends, etc."
+                }
+            ]
+        },
+        {
+            "title": "Enrollment System for CTP Hojancha",
+            "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
+            "skills": [
+                {
+                    "icon": "List",
+                    "details": "Enrollment Form: Created a form where students could select their section according to their level, fill in their information and their guardian's details, and upload documents such as IDs, previous school certificates, and policies."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reports: Generates reports to obtain key data such as students per section, enrollment growth compared to previous years, students by gender, etc."
+                },
+                {
+                    "icon": "Create",
+                    "details": "Enrollment Maintenance: Manages and updates student enrollments based on institutional needs."
+                }
+            ]
+        },
+        {
+            "title": "AF Platform",
+            "description": "This project was for an insurance company called AF Seguros and was developed by a company called Northtec. The technologies used were ReactJS with Firebase for data storage, file management, and authentication. The purpose of this project was to handle core operations such as insurance quotations, sales commissions, the product catalog, and customer relationship management.",
+            "skills": [
+                {
+                    "icon": "Timer",
+                    "details": "Used Firebase sockets (snapshots) to establish real-time communication."
+                },
+                {
+                    "icon": "ChangeCircle",
+                    "details": "Created dynamic forms that supported field updates, allowing changes without modifying the code."
+                },
+                {
+                    "icon": "Speed",
+                    "details": "Optimized queries to keep Firebase within the free-tier request limit, avoiding extra costs and improving user experience."
+                }
+            ]
+        },
+        {
+            "title": "AF AI Wrapper",
+            "description": "The purpose of this AI wrapper was to create different AI functionalities using Gemini for some of AF Seguros' applications, such as AllSports+ (a fitness app) and the AF Website. ReactJS was used for the frontend, and ExpressJS was used to create a REST API that manages the Gemini service and prompts.",
+            "skills": [
+                {
+                    "icon": "FitnessCenter",
+                    "details": "Generated workout routines using Gemini AI, taking into account various parameters provided by the user, such as height, weight, goals, physical limitations, available equipment, available time, and more."
+                }
+            ]
+        },
+        {
+            "title": "AF Website",
+            "description": "This project was developed to update the previous AF Website using modern technologies such as ReactJS, ExpressJS, and Firebase while giving the site a fresher look and feel. The website included the following functionalities:",
+            "skills": [
+                {
+                    "icon": "Security",
+                    "details": "Insurance Self-Quotation: Users could quote their insurance policies independently using the insurance catalog and their personal information."
+                },
+                {
+                    "icon": "ManageAccounts",
+                    "details": "Insurance Self-Management: Users could manage their policies, review their receipts, submit claims, and perform other operations without customer service intervention."
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from '@mui/material';
 
-const GradientText = ({ children, textAlign = '', fontSize = {xs: 25, md: 30}}) => {
+const GradientText = ({ children, textAlign = '', fontSize = {xs: 25, md: 30}, sx = {}}) => {
     return (
         <Typography
             sx={{
@@ -11,7 +11,8 @@ const GradientText = ({ children, textAlign = '', fontSize = {xs: 25, md: 30}}) 
                 background: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 60%, #FFD700 80%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
-                textAlign: textAlign
+                textAlign: textAlign,
+                ...sx
             }}
         >
             {children}

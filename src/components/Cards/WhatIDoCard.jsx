@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import GradientText from '../Text/GradientText';
+import { GetIconFromIconMap } from '../../utils/iconMap';
 
 const WhatIDoCard = ({ icon, title, text }) => {
     const theme = useTheme()
@@ -24,7 +25,7 @@ const WhatIDoCard = ({ icon, title, text }) => {
                 minWidth:{xs:200, md:250}
             }}
         >
-            <Box sx={{ fontSize: 40, color: theme?.palette?.text?.secondary }}>{icon}</Box>
+            <Box sx={{ fontSize: 40, color: theme?.palette?.text?.secondary }}>{GetIconFromIconMap(icon)}</Box>
             <GradientText>
                 {title}
             </GradientText>

@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { I18nextProvider } from 'react-i18next'
 import AppRouter from './router/AppRouter'
+import i18n from '../i18n'
 
 function App() {
   return (
-    <AppRouter />
+    <I18nextProvider i18n={i18n}>
+      <AppRouter />
+    </I18nextProvider>
   )
 }
 
