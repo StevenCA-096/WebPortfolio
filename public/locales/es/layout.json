@@ -5,5 +5,9 @@
     "changeLanguage":{
         "toEn":"Cambiar a inglés",
         "toEs":"Cambiar a español"
+    },
+    "footer":{
+        "designedBy":"Creado Por",
+        "message":"Con paciencia y una taza de café"
     }
 }

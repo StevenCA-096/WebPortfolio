@@ -5,5 +5,9 @@
     "changeLanguage":{
         "toEn":"Change to English",
         "toEs":"Change to Spanish"
+    },
+    "footer":{
+        "designedBy":"Designed By",
+        "message":"With patient and a cup of coffe"
     }
 }
