@@ -28,8 +28,8 @@ const ChangeLanguageButton = () => {
                 cursor: 'pointer',
                 WebkitTapHighlightColor: 'transparent'
             }}
-            animate={{ rotateY: isFlipped ? 90 : 0 }}
-            transition={{ duration: 0.3 }}
+            animate={{ rotateY: isFlipped ? 90 : 0, opacity: isFlipped? 0.5 : 1 }}
+            transition={{ duration: 0.1 }}
         />
     )
 }

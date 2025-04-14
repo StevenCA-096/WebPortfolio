@@ -2,7 +2,7 @@
     "greeting": "Greetings, I'm",
     "description": "a software developer, dedicated to web development",
     "sections": {
-        "skills": "Skills",
+        "skills": "Technical Skills",
         "whatIDo": "What I Do"
     }
 }

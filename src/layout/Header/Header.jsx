@@ -48,7 +48,6 @@ const Header = () => {
                     <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                         <Box>
                             <ChangeLanguageButton />
-
                         </Box>
                         {/* <Box>
                             <SpeedDial

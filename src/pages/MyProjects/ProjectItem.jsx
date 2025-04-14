@@ -1,7 +1,7 @@
-import { Button, Grid, Icon, IconButton, List, ListItem, ListItemAvatar, ListItemText, Typography, useTheme } from '@mui/material'
+import { Grid, IconButton, List, ListItem, ListItemAvatar, ListItemText, Typography, useTheme } from '@mui/material'
 import React from 'react'
 import GradientText from '../../components/Text/GradientText'
-import { Image, Visibility } from '@mui/icons-material'
+import { Image } from '@mui/icons-material'
 import { GetIconFromIconMap } from '../../utils/iconMap'
 
 const ProjectItem = ({ project }) => {
@@ -17,7 +17,7 @@ const ProjectItem = ({ project }) => {
                 sx={{
                     borderLeft: `2px solid ${theme?.palette?.text?.secondary}`, // White border bottom
                     borderRadius: 12,
-                    padding: 3
+                    padding: 3,
                 }}
             >
                 <Typography variant='body1'>
@@ -42,7 +42,7 @@ const ProjectItem = ({ project }) => {
             </Grid>
             <Grid item lg={1}>
                 <IconButton>
-                    <Image sx={{color:"white"}}/>
+                    <Image sx={{color:"white", fontSize:30}}/>
                 </IconButton>
              </Grid>
         </Grid>

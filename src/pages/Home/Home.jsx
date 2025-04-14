@@ -4,6 +4,7 @@ import GradientText from '../../components/Text/GradientText'
 import MySkills from './MySkills'
 import WhatIDo from './WhatIDo'
 import { useTranslation } from 'react-i18next'
+import me from '../../assets/Images/Me/steven.png'
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
           <Grid item xs={12} display={{ xs: 'flex', sm: 'none' }} justifyContent={{ xs: 'center' }}>
             <Box
               component={'img'}
-              src='https://static.vecteezy.com/system/resources/thumbnails/024/344/088/small_2x/businessman-isolated-illustration-ai-generative-free-png.png'
+              src={me}
               sx={{ maskImage: 'linear-gradient(black 75%, transparent)', aspectRatio: "16:9", width: { xs: 200, md: 250 } }}
             />
           </Grid>
@@ -31,7 +32,7 @@ const Home = () => {
           <Grid item lg={4} display={{ xs: 'none', sm: 'flex' }}>
             <Box
               component={'img'}
-              src='https://www.pngplay.com/wp-content/uploads/15/Kylian-Mbappe-Free-PNG.png'
+              src={me}
               sx={{ maskImage: 'linear-gradient(black 75%, transparent)', aspectRatio: "16:9", width: { xs: 200, md: 250 } }}
             />
           </Grid>

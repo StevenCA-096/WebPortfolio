@@ -66,7 +66,7 @@ const NavItems = () => {
                 </Typography>
             </MenuItem>
 
-            <MenuItem>
+            <MenuItem onClick={() => navigate('my-experience')}>
                 <Typography>
                     {t('experience')}
                 </Typography>
