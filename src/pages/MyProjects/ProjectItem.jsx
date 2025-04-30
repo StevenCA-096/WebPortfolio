@@ -1,13 +1,27 @@
 import { Grid, IconButton, List, ListItem, ListItemAvatar, ListItemText, Typography, useTheme } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import GradientText from '../../components/Text/GradientText'
 import { Image } from '@mui/icons-material'
 import { GetIconFromIconMap } from '../../utils/iconMap'
+import MyProjectImagesModal from './MyProjectImagesModal'
 
 const ProjectItem = ({ project }) => {
     const theme = useTheme()
+    const [openModal, setOpenModal] = useState(false)
+
     return (
-        <Grid container item lg={12} sx={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", my: 4 }}>
+        <Grid
+            container
+            item
+            lg={12}
+            sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                my: 4
+            }}
+        >
             <Grid item lg={4}>
                 <GradientText fontSize={{ xs: 20, md: 30 }} textAlign='center' sx={{ mr: 2 }}>
                     {project?.title}
@@ -16,6 +30,7 @@ const ProjectItem = ({ project }) => {
             <Grid item lg={7}
                 sx={{
                     borderLeft: `2px solid ${theme?.palette?.text?.secondary}`, // White border bottom
+                    borderRight: { xs: `2px solid ${theme?.palette?.text?.secondary}`, md: "none" }, // White border bottom
                     borderRadius: 12,
                     padding: 3,
                 }}
@@ -36,15 +51,16 @@ const ProjectItem = ({ project }) => {
                                 </ListItem>
                             )
                         }
-                      
+
                     </List>
                 </Typography>
             </Grid>
             <Grid item lg={1}>
-                <IconButton>
-                    <Image sx={{color:"white", fontSize:30}}/>
+                <IconButton onClick={() => setOpenModal(true)}>
+                    <Image sx={{ color: "white", fontSize: 30 }} />
                 </IconButton>
-             </Grid>
+            </Grid>
+            <MyProjectImagesModal open={openModal} onClose={() => setOpenModal(false)}/>
         </Grid>
     )
 }

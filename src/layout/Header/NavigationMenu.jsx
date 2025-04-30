@@ -39,7 +39,7 @@ const NavigationMenu = () => {
                             }}
                             PaperProps={{sx:{background:"#3D3C3C", zIndex:10}}}
                         >
-                            <NavItems />
+                            <NavItems handleClose={handleClose} />
                         </Menu>
                     </Box>
                 )
@@ -49,24 +49,30 @@ const NavigationMenu = () => {
     )
 }
 
-const NavItems = () => {
+const NavItems = ({handleClose}) => {
     const navigate = useNavigate()
     const {t} = useTranslation('layout')
+
+    const handleNavigation = (path) => {
+        navigate(path)
+        if (handleClose) handleClose()
+    }
+
     return (
         <>
-            <MenuItem onClick={() => navigate('/')}>
+            <MenuItem onClick={() => handleNavigation('/')}>
                 <Typography>
                     {t('aboutMe')}
                 </Typography>
             </MenuItem>
 
-            <MenuItem onClick={() => navigate('/my-projects')}>
+            <MenuItem onClick={() => handleNavigation('/my-projects')}>
                 <Typography>
                     {t('myProjects')}
                 </Typography>
             </MenuItem>
 
-            <MenuItem onClick={() => navigate('my-experience')}>
+            <MenuItem onClick={() => handleNavigation('my-experience')}>
                 <Typography>
                     {t('experience')}
                 </Typography>

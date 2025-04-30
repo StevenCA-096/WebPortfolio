@@ -36,7 +36,7 @@ const Header = () => {
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 textDecoration: 'none',
-                                fontSize: { xs: 15 }
+                                fontSize: { xs: 16 }
                             }}
                         >
                             Steven Cordero
@@ -49,44 +49,6 @@ const Header = () => {
                         <Box>
                             <ChangeLanguageButton />
                         </Box>
-                        {/* <Box>
-                            <SpeedDial
-                                ariaLabel="SpeedDial basic example"
-                                sx={{ position: 'absolute', right: { xs: -10, sm: 10, lg:30 }, top: 10 }}
-                                icon={<Send />}
-                                direction='down'
-                                FabProps={{
-                                    size: 'small', // Reduce the size of the button
-                                    sx: {
-                                        width: { xs: 30, sm: 40 },
-                                        height: { xs: 30, sm: 40 },
-                                        backgroundColor: "transparent",
-                                        '&:focus': {
-                                            outline: 'none',
-                                            boxShadow: 'none',
-                                            backgroundColor: 'transparent'
-                                        },
-                                    },
-                                    disableRipple: true
-                                }}
-                            >
-                                {actions.map((action) => (
-                                    <SpeedDialAction
-                                        onClick={() => {
-                                            if (action.href.startsWith('mailto:')) {
-                                                window.location.href = action.href;
-                                            } else {
-                                                window.open(action.href, '_blank');
-                                            }
-                                        }}
-                                        key={action.name}
-                                        icon={action.icon}
-                                        tooltipTitle={action.name}
-                                    />
-                                ))}
-                            </SpeedDial>
-                        </Box> */}
-
                     </Box>
                 </Toolbar>
             </Container>
