@@ -1,6 +1,8 @@
 import { I18nextProvider } from 'react-i18next'
 import AppRouter from './router/AppRouter'
 import i18n from '../i18n'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

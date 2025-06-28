@@ -1,8 +1,6 @@
 import { Container, Grid, Typography } from '@mui/material'
-import React from 'react'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'react-i18next'
-import { MyProjectsList } from '../../data/MyProjectsList'
 
 const MyProjects = () => {
   const { t } = useTranslation('projects')

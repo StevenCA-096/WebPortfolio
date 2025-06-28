@@ -1,7 +1,28 @@
 {
     "title": "Mis Proyectos",
     "projectsImages":"Imagenes del proyecto",
+    "noAddedImages":"No hay imagenes agregadas",
     "myProjects": [
+        {
+            "title": "Sitio Web de AF",
+            "description": "Este proyecto fue desarrollado para actualizar el sitio web anterior de AF Seguros utilizando tecnologías modernas como ReactJS, ExpressJS y Firebase, proporcionando una apariencia más fresca y funcional. El sitio web incluyó las siguientes características:",
+            "skills": [
+                {
+                    "icon": "Security",
+                    "details": "Autocotización de Seguros: Los usuarios podían cotizar sus pólizas de seguro de forma independiente mediante el catálogo de seguros y su información personal."
+                },
+                {
+                    "icon": "ManageAccounts",
+                    "details": "Autogestión de Seguros: Los usuarios podían administrar sus pólizas, revisar sus recibos, presentar reclamaciones y realizar otras operaciones sin intervención del servicio al cliente."
+                }
+            ],
+            "imageFolder":"AF-Website",
+            "images": [
+                "desktop/home-bw",
+                "mobile/home-colored",
+                "desktop/claims"
+            ]
+        },
         {
             "title": "Sistema de Ventas en Línea para Coopepilangosta",
             "description": "Durante este proyecto, pude colaborar con un equipo para desarrollar un sistema de ventas en línea con las funcionalidades esenciales y controles requeridos para una aplicación de esta naturaleza. Algunas de estas características incluyen:",
@@ -36,7 +57,14 @@
                     "icon": "Create",
                     "details": "Mantenimiento de Matrículas: Permite gestionar y actualizar las inscripciones de los estudiantes según las necesidades institucionales."
                 }
-            ]
+            ],
+             "images": [
+                "desktop/dashboard",
+                "mobile/dashboard",
+                "desktop/form",
+                "mobile/form"
+            ],
+            "imageFolder": "CTPHojancha"
         },
         {
             "title": "Plataforma AF",
@@ -63,20 +91,6 @@
                 {
                     "icon": "FitnessCenter",
                     "details": "Generación de rutinas personalizadas con Gemini AI, considerando parámetros proporcionados por el usuario, como altura, peso, objetivos, limitaciones físicas, equipo disponible, tiempo disponible y más."
-                }
-            ]
-        },
-        {
-            "title": "Sitio Web de AF",
-            "description": "Este proyecto fue desarrollado para actualizar el sitio web anterior de AF Seguros utilizando tecnologías modernas como ReactJS, ExpressJS y Firebase, proporcionando una apariencia más fresca y funcional. El sitio web incluyó las siguientes características:",
-            "skills": [
-                {
-                    "icon": "Security",
-                    "details": "Autocotización de Seguros: Los usuarios podían cotizar sus pólizas de seguro de forma independiente mediante el catálogo de seguros y su información personal."
-                },
-                {
-                    "icon": "ManageAccounts",
-                    "details": "Autogestión de Seguros: Los usuarios podían administrar sus pólizas, revisar sus recibos, presentar reclamaciones y realizar otras operaciones sin intervención del servicio al cliente."
                 }
             ]
         }

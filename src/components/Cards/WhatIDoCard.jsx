@@ -22,7 +22,8 @@ const WhatIDoCard = ({ icon, title, text }) => {
                 textAlign: 'center',
                 color: 'white',
                 minHeight:{xs:200, md:280},
-                minWidth:{xs:200, md:250}
+                minWidth:{xs:200, md:250},
+                height:100
             }}
         >
             <Box sx={{ fontSize: 40, color: theme?.palette?.text?.secondary }}>{GetIconFromIconMap(icon)}</Box>

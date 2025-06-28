@@ -1,5 +1,5 @@
 import { Grid, IconButton, List, ListItem, ListItemAvatar, ListItemText, Typography, useTheme } from '@mui/material'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import GradientText from '../../components/Text/GradientText'
 import { Image } from '@mui/icons-material'
 import { GetIconFromIconMap } from '../../utils/iconMap'
@@ -8,7 +8,7 @@ import MyProjectImagesModal from './MyProjectImagesModal'
 const ProjectItem = ({ project }) => {
     const theme = useTheme()
     const [openModal, setOpenModal] = useState(false)
-
+    console.log(project)
     return (
         <Grid
             container
@@ -60,7 +60,7 @@ const ProjectItem = ({ project }) => {
                     <Image sx={{ color: "white", fontSize: 30 }} />
                 </IconButton>
             </Grid>
-            <MyProjectImagesModal open={openModal} onClose={() => setOpenModal(false)}/>
+            <MyProjectImagesModal open={openModal} onClose={() => setOpenModal(false)} images={project?.images} projectFolder={project?.imageFolder}/>
         </Grid>
     )
 }

@@ -1,7 +1,28 @@
 {
     "title": "Projects I Have Participated In",
-    "projectsImages":"Project Images",
+    "projectsImages": "Project Images",
+    "noAddedImages": "No images added",
     "myProjects": [
+        {
+            "title": "AF Website",
+            "description": "This project was developed to update the previous AF Website using modern technologies such as ReactJS, ExpressJS, and Firebase while giving the site a fresher look and feel. The website included the following functionalities:",
+            "skills": [
+                {
+                    "icon": "Security",
+                    "details": "Insurance Self-Quotation: Users could quote their insurance policies independently using the insurance catalog and their personal information."
+                },
+                {
+                    "icon": "ManageAccounts",
+                    "details": "Insurance Self-Management: Users could manage their policies, review their receipts, submit claims, and perform other operations without customer service intervention."
+                }
+            ],
+            "images": [
+                "destop/home-bw",
+                "mobile/home-colored",
+                "home/claims-png"
+            ],
+            "imageFolder": "AF-Website"
+        },
         {
             "title": "Online Sales System For Coopepilangosta",
             "description": "During this project, I was able to collaborate with a team to develop an online sales system with the core functionalities and controls required for an application of this nature. Some of these features include:",
@@ -36,7 +57,14 @@
                     "icon": "Create",
                     "details": "Enrollment Maintenance: Manages and updates student enrollments based on institutional needs."
                 }
-            ]
+            ],
+            "images": [
+                "desktop/dashboard",
+                "mobile/dashboard",
+                "desktop/form",
+                "mobile/form"
+            ],
+            "imageFolder": "CTPHojancha"
         },
         {
             "title": "AF Platform",
@@ -63,20 +91,6 @@
                 {
                     "icon": "FitnessCenter",
                     "details": "Generated workout routines using Gemini AI, taking into account various parameters provided by the user, such as height, weight, goals, physical limitations, available equipment, available time, and more."
-                }
-            ]
-        },
-        {
-            "title": "AF Website",
-            "description": "This project was developed to update the previous AF Website using modern technologies such as ReactJS, ExpressJS, and Firebase while giving the site a fresher look and feel. The website included the following functionalities:",
-            "skills": [
-                {
-                    "icon": "Security",
-                    "details": "Insurance Self-Quotation: Users could quote their insurance policies independently using the insurance catalog and their personal information."
-                },
-                {
-                    "icon": "ManageAccounts",
-                    "details": "Insurance Self-Management: Users could manage their policies, review their receipts, submit claims, and perform other operations without customer service intervention."
                 }
             ]
         }
