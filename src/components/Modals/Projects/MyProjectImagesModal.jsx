@@ -20,6 +20,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
     return imagesMap[match]
   })
 
+  console.log(imagesMap)
   const sliderSettings = {
     dots: true,
     infinite: true,
