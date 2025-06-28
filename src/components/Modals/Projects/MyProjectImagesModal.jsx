@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
 
 // Dynamically import all images in your project folder
-const imagesMap = import.meta.glob('../../assets/images/Projects/**/*.{png,jpg,jpeg}', {
+const imagesMap = import.meta.glob('../../../assets/images/Projects/**/*.{png,jpg,jpeg}', {
   eager: true,
   import: 'default',
 })
@@ -16,7 +16,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
 
   // Resolve image paths
   const resolvedImages = images.map((imgName) => {
-    const match = Object.keys(imagesMap).find((key) => key.includes(`${projectFolder}/${imgName}`))
+    const match = Object.keys(imagesMap).find((key) => key.includes(`/${projectFolder}/${imgName}`))
     return imagesMap[match]
   })
 

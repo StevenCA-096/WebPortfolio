@@ -3,7 +3,7 @@ import { useState } from 'react'
 import GradientText from '../../components/Text/GradientText'
 import { Image } from '@mui/icons-material'
 import { GetIconFromIconMap } from '../../utils/iconMap'
-import MyProjectImagesModal from './MyProjectImagesModal'
+import MyProjectImagesModal from '../../components/Modals/Projects/MyProjectImagesModal'
 
 const ProjectItem = ({ project }) => {
     const theme = useTheme()
