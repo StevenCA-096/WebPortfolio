@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 const Footer = () => {
   const theme = useTheme()
   const { t } = useTranslation('layout'); // Specify the namespace
-  console.log(t('message'))
   return (
     <Container
       maxWidth='xxl'

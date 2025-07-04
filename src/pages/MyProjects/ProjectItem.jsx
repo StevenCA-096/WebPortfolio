@@ -8,7 +8,7 @@ import MyProjectImagesModal from '../../components/Modals/Projects/MyProjectImag
 const ProjectItem = ({ project }) => {
     const theme = useTheme()
     const [openModal, setOpenModal] = useState(false)
-    console.log(project)
+
     return (
         <Grid
             container

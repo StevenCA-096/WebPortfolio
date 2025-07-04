@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const MyProjects = () => {
   const { t } = useTranslation('projects')
   const projects = t('myProjects', { returnObjects: true }) // Obtiene el array de proyectos
-  console.log(projects)
+
   return (
     <Container maxWidth='lg'>
       <Grid container>
