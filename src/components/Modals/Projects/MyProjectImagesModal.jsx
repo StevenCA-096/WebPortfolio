@@ -5,21 +5,22 @@ import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
 
 // AF-Website images
-import afHomeDesktopColored from '@project-images/AF-Website/desktop/home-colored.png'
-import afHomeMobileColored from '@project-images/AF-Website/mobile/home-colored.png'
-import afClaimsDesktop from '@project-images/AF-Website/desktop/claims.png'
+import afHomeDesktopBw from '../../../assets/Images/Projects/AF-Website/desktop/home-bw.png'
+import afHomeDesktopColored from '../../../assets/Images/Projects/AF-Website/desktop/home-colored.png'
+import afHomeMobileColored from '../../../assets/Images/Projects/AF-Website/mobile/home-colored.png'
+import afClaimsDesktop from '../../../assets/Images/Projects/AF-Website/desktop/claims.png'
 
 // CTPHojancha images  
-import ctpDashboardDesktop from '@project-images/CTPHojancha/desktop/dashboard.png'
-import ctpDashboardMobile from '@project-images/CTPHojancha/mobile/dashboard.png'
-import ctpFormDesktop from '@project-images/CTPHojancha/desktop/form.png'
-import ctpFormMobile from '@project-images/CTPHojancha/mobile/form.png'
+import ctpDashboardDesktop from '../../../assets/Images/Projects/CTPHojancha/desktop/dashboard.png'
+import ctpDashboardMobile from '../../../assets/Images/Projects/CTPHojancha/mobile/dashboard.png'
+import ctpFormDesktop from '../../../assets/Images/Projects/CTPHojancha/desktop/form.png'
+import ctpFormMobile from '../../../assets/Images/Projects/CTPHojancha/mobile/form.png'
 
 // AF-Platform images  
-import afPlatformDesktopDashboard from '@project-images/AF-Platform/desktop/dashboard.png'
-import afPlatformDesktopModule from '@project-images/AF-Platform/desktop/module.png'
-import afPlatformMobileDashboard from '@project-images/AF-Platform/mobile/dashboard.png'
-import afPlatformMobileModule from '@project-images/AF-Platform/mobile/module.png'
+import afPlatformDesktopDashboard from '../../../assets/Images/Projects/AF-Platform/desktop/dashboard.png'
+import afPlatformDesktopModule from '../../../assets/Images/Projects/AF-Platform/desktop/module.png'
+import afPlatformMobileDashboard from '../../../assets/Images/Projects/AF-Platform/mobile/dashboard.png'
+import afPlatformMobileModule from '../../../assets/Images/Projects/AF-Platform/mobile/module.png'
 
 const imageMap = {
   'AF-Website': {
