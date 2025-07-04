@@ -21,6 +21,23 @@ const WhatIDo = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        appendDots: dots => (
+            <div style={{
+                textAlign: "center", // Centrar los dots
+                marginTop: "12px"    // Espacio superior
+            }}>
+                <ul style={{
+                    margin: "0px",
+                    padding: "0px",
+                    listStyle: "none",
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "4px"
+                }}>
+                    {dots}
+                </ul>
+            </div>
+        )
     }
 
     return (
@@ -33,13 +50,18 @@ const WhatIDo = () => {
             <Grid container sx={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: { xs: 2, md: 10 }, my: 4 }}>
                 {
                     isMobile ? (
-                        <Slider {...sliderSettings}>
-                            {whatIDoList.map((whatIDo, index) =>
-                            <Grid item xs={12} lg={3} key={index} sx={{height:100}}>
-                                    <WhatIDoCard icon={whatIDo.icon} text={whatIDo.text} title={whatIDo.title} key={index} />
-                                </Grid>
-                            )}
-                        </Slider>
+                        <Grid item xs={12} sx={{ px: 2 }} spacing={2}>
+                            <Slider
+                                {...sliderSettings}
+                                dotsClass="custom-dots"
+                            >
+                                {whatIDoList.map((whatIDo, index) =>
+                                    <Grid item xs={12} key={index} >
+                                        <WhatIDoCard icon={whatIDo.icon} text={whatIDo.text} title={whatIDo.title} key={index} />
+                                    </Grid>
+                                )}
+                            </Slider>
+                        </Grid>
                     ) : (
                         whatIDoList.map((whatIDo, index) =>
                             <Grid item xs={12} lg={3} key={index} sx={{ display: 'flex', flexDirection: "row", justifyContent: "center" }}>

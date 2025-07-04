@@ -3,13 +3,13 @@ import { Box, Typography } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import GradientText from '../Text/GradientText';
 import { GetIconFromIconMap } from '../../utils/iconMap';
-
+ 
 const WhatIDoCard = ({ icon, title, text }) => {
     const theme = useTheme()
     return (
         <Box
             sx={{
-                width: 300,
+                width: {xs:290,sm:300},
                 padding: 3,
                 backgroundColor: '#100F0F',
                 borderRadius: 2,
@@ -21,9 +21,9 @@ const WhatIDoCard = ({ icon, title, text }) => {
                 gap: 1,
                 textAlign: 'center',
                 color: 'white',
-                minHeight:{xs:200, md:280},
+                minHeight:{xs:220, md:280},
                 minWidth:{xs:200, md:250},
-                height:100
+                height:140
             }}
         >
             <Box sx={{ fontSize: 40, color: theme?.palette?.text?.secondary }}>{GetIconFromIconMap(icon)}</Box>

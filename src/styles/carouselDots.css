@@ -1,0 +1,24 @@
+/* En tu archivo CSS */
+.custom-dots-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.custom-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.custom-dots li button {
+  background: #ccc;
+  border: none;
+  border-radius: 90%;
+  height: 8px;
+  cursor: pointer;
+  font-size: 0; /* Oculta el texto */
+}
+
+.custom-dots li.slick-active button {
+  background: #ffffff;
+  transform: scale(1.2);
+}

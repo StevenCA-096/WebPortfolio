@@ -59,9 +59,8 @@ const ImageWithSkeleton = ({ src, alt, onClick, sx }) => {
             borderRadius: 2,
             bgcolor: '#333',
             position: loaded ? 'absolute' : 'static',
-            top: 0,
-            left: 0,
             zIndex: loaded ? -1 : 1,
+            mb:-40
           }}
         />
       )}
@@ -153,13 +152,13 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
         <DialogTitle sx={{ color: 'white' }}>
           {t('projectImages')}
         </DialogTitle>
-        <DialogContent sx={{ overflow: "hidden", mx: 1, minHeight: 200 }}>
+        <DialogContent sx={{ overflow: "hidden", mx: 1, minHeight: 200, mb:1}}>
           {resolvedImages.length === 0 ? (
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 300 }}>
               <Typography color="gray">{t('noAddedImages')}</Typography>
             </Box>
           ) : (
-            <Slider {...sliderSettings}>
+            <Slider {...sliderSettings} >
               {resolvedImages.map((src, i) => (
                 <Box key={i} sx={{ outline: 'none', textAlign: 'center' }}>
                   <ImageWithSkeleton

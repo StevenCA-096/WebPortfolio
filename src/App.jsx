@@ -3,7 +3,7 @@ import AppRouter from './router/AppRouter'
 import i18n from '../i18n'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import './styles/carouselDots.css'
 function App() {
   return (
     <I18nextProvider i18n={i18n}>
