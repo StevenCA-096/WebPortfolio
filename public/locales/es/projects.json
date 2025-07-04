@@ -1,6 +1,6 @@
 {
     "title": "Mis Proyectos",
-    "projectsImages":"Imagenes del proyecto",
+    "projectImages":"Imagenes del proyecto",
     "noAddedImages":"No hay imagenes agregadas",
     "myProjects": [
         {
@@ -18,27 +18,10 @@
             ],
             "imageFolder":"AF-Website",
             "images": [
+                "desktop/home-colored",
                 "desktop/home-bw",
                 "mobile/home-colored",
                 "desktop/claims"
-            ]
-        },
-        {
-            "title": "Sistema de Ventas en Línea para Coopepilangosta",
-            "description": "Durante este proyecto, pude colaborar con un equipo para desarrollar un sistema de ventas en línea con las funcionalidades esenciales y controles requeridos para una aplicación de esta naturaleza. Algunas de estas características incluyen:",
-            "skills": [
-                {
-                    "icon": "Done",
-                    "details": "Control de Inventario: Gestiona el stock de productos y diversos casos como ventas, pérdida de productos por vencimiento o donaciones donde el producto sale del inventario por una razón diferente a una venta. También rastrea la llegada de nuevos productos."
-                },
-                {
-                    "icon": "People",
-                    "details": "Gestión de Usuarios: Administra los usuarios del sistema, utilizando JWT para verificar identidades y otorgar acceso a las funcionalidades correspondientes según los roles de usuario."
-                },
-                {
-                    "icon": "Checklist",
-                    "details": "Reportes: Muestra información esencial sobre ventas, como ventas por producto, tendencias estacionales, etc."
-                }
             ]
         },
         {
@@ -82,7 +65,14 @@
                     "icon": "Speed",
                     "details": "Optimización de consultas para mantener Firebase dentro del límite de solicitudes gratuitas, evitando costos adicionales y mejorando la experiencia del usuario."
                 }
-            ]
+            ],
+             "images": [
+                "desktop/dashboard",
+                "mobile/dashboard",
+                "desktop/module",
+                "mobile/module"
+            ],
+            "imageFolder": "AF-Platform"
         },
         {
             "title": "AF AI Wrapper",
@@ -91,6 +81,24 @@
                 {
                     "icon": "FitnessCenter",
                     "details": "Generación de rutinas personalizadas con Gemini AI, considerando parámetros proporcionados por el usuario, como altura, peso, objetivos, limitaciones físicas, equipo disponible, tiempo disponible y más."
+                }
+            ]
+        },
+        {
+            "title": "Sistema de Ventas en Línea para Coopepilangosta",
+            "description": "Durante este proyecto, pude colaborar con un equipo para desarrollar un sistema de ventas en línea con las funcionalidades esenciales y controles requeridos para una aplicación de esta naturaleza. Algunas de estas características incluyen:",
+            "skills": [
+                {
+                    "icon": "Done",
+                    "details": "Control de Inventario: Gestiona el stock de productos y diversos casos como ventas, pérdida de productos por vencimiento o donaciones donde el producto sale del inventario por una razón diferente a una venta. También rastrea la llegada de nuevos productos."
+                },
+                {
+                    "icon": "People",
+                    "details": "Gestión de Usuarios: Administra los usuarios del sistema, utilizando JWT para verificar identidades y otorgar acceso a las funcionalidades correspondientes según los roles de usuario."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reportes: Muestra información esencial sobre ventas, como ventas por producto, tendencias estacionales, etc."
                 }
             ]
         }

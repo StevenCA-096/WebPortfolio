@@ -1,6 +1,6 @@
 {
     "title": "Projects I Have Participated In",
-    "projectsImages": "Project Images",
+    "projectImages": "Project Images",
     "noAddedImages": "No images added",
     "myProjects": [
         {
@@ -16,31 +16,15 @@
                     "details": "Insurance Self-Management: Users could manage their policies, review their receipts, submit claims, and perform other operations without customer service intervention."
                 }
             ],
+            "imageFolder": "AF-Website",
             "images": [
-                "destop/home-bw",
+                "desktop/home-colored",
+                "desktop/home-bw",
                 "mobile/home-colored",
-                "home/claims-png"
-            ],
-            "imageFolder": "AF-Website"
-        },
-        {
-            "title": "Online Sales System For Coopepilangosta",
-            "description": "During this project, I was able to collaborate with a team to develop an online sales system with the core functionalities and controls required for an application of this nature. Some of these features include:",
-            "skills": [
-                {
-                    "icon": "Done",
-                    "details": "Inventory Control: Manages product stock and various cases like sales, product loss due to expiration, or giveaways where the product leaves stock for a reason other than a sale. It also tracks new product arrivals."
-                },
-                {
-                    "icon": "People",
-                    "details": "User Management: Manages system users, using JWT to verify identities and grant access to the appropriate functionalities based on user roles."
-                },
-                {
-                    "icon": "Checklist",
-                    "details": "Reports: Displays essential information about sales, such as sales per product, seasonal trends, etc."
-                }
+                "desktop/claims"
             ]
         },
+        
         {
             "title": "Enrollment System for CTP Hojancha",
             "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
@@ -82,7 +66,14 @@
                     "icon": "Speed",
                     "details": "Optimized queries to keep Firebase within the free-tier request limit, avoiding extra costs and improving user experience."
                 }
-            ]
+            ],
+            "images": [
+                "desktop/dashboard",
+                "mobile/dashboard",
+                "desktop/module",
+                "mobile/module"
+            ],
+            "imageFolder": "AF-Platform"
         },
         {
             "title": "AF AI Wrapper",
@@ -91,6 +82,24 @@
                 {
                     "icon": "FitnessCenter",
                     "details": "Generated workout routines using Gemini AI, taking into account various parameters provided by the user, such as height, weight, goals, physical limitations, available equipment, available time, and more."
+                }
+            ]
+        },
+        {
+            "title": "Online Sales System For Coopepilangosta",
+            "description": "During this project, I was able to collaborate with a team to develop an online sales system with the core functionalities and controls required for an application of this nature. Some of these features include:",
+            "skills": [
+                {
+                    "icon": "Done",
+                    "details": "Inventory Control: Manages product stock and various cases like sales, product loss due to expiration, or giveaways where the product leaves stock for a reason other than a sale. It also tracks new product arrivals."
+                },
+                {
+                    "icon": "People",
+                    "details": "User Management: Manages system users, using JWT to verify identities and grant access to the appropriate functionalities based on user roles."
+                },
+                {
+                    "icon": "Checklist",
+                    "details": "Reports: Displays essential information about sales, such as sales per product, seasonal trends, etc."
                 }
             ]
         }
