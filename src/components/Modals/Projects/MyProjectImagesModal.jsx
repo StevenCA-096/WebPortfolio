@@ -5,7 +5,6 @@ import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
 
 // AF-Website images
-import afHomeDesktopBw from '@project-images/AF-Website/desktop/home-bw.png'
 import afHomeDesktopColored from '@project-images/AF-Website/desktop/home-colored.png'
 import afHomeMobileColored from '@project-images/AF-Website/mobile/home-colored.png'
 import afClaimsDesktop from '@project-images/AF-Website/desktop/claims.png'
