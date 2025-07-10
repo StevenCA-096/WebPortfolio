@@ -33,7 +33,11 @@ const Home = () => {
             <Box
               component={'img'}
               src={me}
-              sx={{ maskImage: 'linear-gradient(black 75%, transparent)', aspectRatio: "16:9", width: { xs: 200, md: 250 } }}
+              sx={{ 
+                maskImage: 'linear-gradient(black 75%, transparent)', 
+                aspectRatio: "16:9", 
+                width: { xs: 200, md: 250 },
+              }}
             />
           </Grid>
         </Grid>

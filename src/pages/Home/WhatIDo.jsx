@@ -56,7 +56,7 @@ const WhatIDo = () => {
                                 dotsClass="custom-dots"
                             >
                                 {whatIDoList.map((whatIDo, index) =>
-                                    <Grid item xs={12} key={index} >
+                                    <Grid item xs={12} px={{xs:1, sm:0 }} key={index} >
                                         <WhatIDoCard icon={whatIDo.icon} text={whatIDo.text} title={whatIDo.title} key={index} />
                                     </Grid>
                                 )}

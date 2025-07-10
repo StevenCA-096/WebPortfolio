@@ -9,7 +9,7 @@ const WhatIDoCard = ({ icon, title, text }) => {
     return (
         <Box
             sx={{
-                width: {xs:290,sm:300},
+                width: {xs:'100%',sm:300},
                 padding: 3,
                 backgroundColor: 'rgb(19, 19, 19)',
                 borderRadius: 2,
@@ -21,8 +21,8 @@ const WhatIDoCard = ({ icon, title, text }) => {
                 gap: 1,
                 textAlign: 'center',
                 color: 'white',
-                minHeight:{xs:220, md:280},
-                minWidth:{xs:200, md:250},
+                minHeight:{xs:230, md:280},
+                minWidth:{xs:'100%', md:250},
                 height:140
             }}
         >
