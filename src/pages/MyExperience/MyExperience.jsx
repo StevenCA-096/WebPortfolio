@@ -10,7 +10,7 @@ const MyExperience = () => {
     const experience = t('experience', { returnObjects: true })
     return (
         <Container>
-            <Typography variant="h4" color="white" gutterBottom textAlign="center">
+            <Typography variant="h5" color="white" gutterBottom textAlign="center">
                 {t('myExperience')}
             </Typography>
 

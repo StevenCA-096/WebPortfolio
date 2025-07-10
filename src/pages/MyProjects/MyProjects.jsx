@@ -10,7 +10,7 @@ const MyProjects = () => {
     <Container maxWidth='lg'>
       <Grid container>
         <Grid container item sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-          <Typography fontSize={{ xs: 25, md: 30 }}>
+          <Typography variant='h5'>
             {t('title')} {/* Obtiene el título traducido */}
           </Typography>
         </Grid>

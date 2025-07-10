@@ -23,7 +23,7 @@ export const theme = createTheme({
       secondary:"#FFD700"
     },
     background: {
-      default: '#121212', // Optional: Set background to dark color for contrast
+      default: '#181818', // Optional: Set background to dark color for contrast
     },
   },
   typography: {

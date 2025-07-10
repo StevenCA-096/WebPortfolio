@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { Box, IconButton, Menu, MenuItem, Typography } from '@mui/material'
 import { Menu as MenuIcon } from '@mui/icons-material'
 import { useTranslation } from 'react-i18next'
+import { NavBarButton } from '../../components/Navigation/NavbarButton'
 
 const NavigationMenu = () => {
     const isMobile = useIsMobile()
@@ -27,7 +28,7 @@ const NavigationMenu = () => {
                 ) : (
                     <Box>
                         <IconButton onClick={handleClick}>
-                            <MenuIcon sx={{color:"white", fontSize:30}}/>
+                            <MenuIcon sx={{ color: "white", fontSize: 30 }} />
                         </IconButton>
                         <Menu
                             id="basic-menu"
@@ -37,7 +38,7 @@ const NavigationMenu = () => {
                             MenuListProps={{
                                 'aria-labelledby': 'basic-button',
                             }}
-                            PaperProps={{sx:{background:"#3D3C3C", zIndex:10}}}
+                            PaperProps={{ sx: { background: "#3D3C3C", zIndex: 10 } }}
                         >
                             <NavItems handleClose={handleClose} />
                         </Menu>
@@ -49,34 +50,42 @@ const NavigationMenu = () => {
     )
 }
 
-const NavItems = ({handleClose}) => {
+const NavItems = ({ handleClose }) => {
     const navigate = useNavigate()
-    const {t} = useTranslation('layout')
+    const { t } = useTranslation('layout')
 
     const handleNavigation = (path) => {
         navigate(path)
         if (handleClose) handleClose()
     }
 
+    const pages = [
+        {
+            label: t('aboutMe'),
+            route: '/'
+        },
+        {
+            label: t('myProjects'),
+            route: '/my-projects'
+        },
+        {
+            label: t('experience'),
+            route: '/my-experience'
+        }
+    ]
+
     return (
         <>
-            <MenuItem onClick={() => handleNavigation('/')}>
-                <Typography>
-                    {t('aboutMe')}
-                </Typography>
-            </MenuItem>
-
-            <MenuItem onClick={() => handleNavigation('/my-projects')}>
-                <Typography>
-                    {t('myProjects')}
-                </Typography>
-            </MenuItem>
-
-            <MenuItem onClick={() => handleNavigation('my-experience')}>
-                <Typography>
-                    {t('experience')}
-                </Typography>
-            </MenuItem>
+            {
+                pages.map((page) =>
+                    <MenuItem onClick={() => handleNavigation(page.route)}>
+                        <NavBarButton
+                            route={page.route}
+                            text={page.label}
+                        />
+                    </MenuItem>
+                )
+            }
         </>
     )
 }

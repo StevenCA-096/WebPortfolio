@@ -35,10 +35,10 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                             </GradientText>
                         </Box>
                         <Box width={{ xs: '60%', md: '70%' }}>
-                            <Typography variant="h5" fontWeight="bold">
+                            <Typography variant="h6" fontWeight="bold">
                                 {title}
                             </Typography>
-                            <Typography variant="h6" fontWeight="bold">
+                            <Typography variant="body2" fontWeight="bold">
                                 {enterprise}
                             </Typography>
                         </Box>
