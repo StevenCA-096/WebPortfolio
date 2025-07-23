@@ -11,7 +11,7 @@ const WhatIDoCard = ({ icon, title, text }) => {
             sx={{
                 width: {xs:'100%',sm:300},
                 padding: 3,
-                backgroundColor: 'rgb(19, 19, 19)',
+                backgroundColor: 'rgba(27, 26, 26, 0.86)',
                 borderRadius: 2,
                 borderBottom: `4px solid ${theme?.palette?.text?.secondary}`, // White border bottom
                 display: 'flex',
