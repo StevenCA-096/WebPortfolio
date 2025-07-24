@@ -167,7 +167,7 @@ const Footer = () => {
                 fontSize: '0.7rem'
               }}
             >
-              Thanks for visiting! 🚀
+              {t('footer.thanksForVisit')} 🚀
             </Typography>
           </Stack>
         </Box>
@@ -178,7 +178,7 @@ const Footer = () => {
         sx={{
           position: 'absolute',
           bottom: 0,
-          left: '50%',
+          left: '52%',
           transform: 'translateX(-50%)',
           width: '200px',
           height: '100px',
