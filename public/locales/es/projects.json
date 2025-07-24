@@ -22,6 +22,12 @@
                 "desktop/home-bw",
                 "mobile/home-colored",
                 "desktop/claims"
+            ],
+            "techStack": [
+                "Firebase",
+                "React",
+                "Javascript",
+                "MUI"
             ]
         },
         {
@@ -47,7 +53,15 @@
                 "desktop/form",
                 "mobile/form"
             ],
-            "imageFolder": "CTPHojancha"
+            "imageFolder": "CTPHojancha",
+            "techStack": [
+                "React",
+                "Javascript",
+                "Bootstrap",
+                "MySql",
+                "NestJS",
+                "Docker"
+            ]
         },
         {
             "title": "Plataforma AF",
@@ -72,7 +86,12 @@
                 "desktop/module",
                 "mobile/module"
             ],
-            "imageFolder": "AF-Platform"
+            "imageFolder": "AF-Platform",
+            "techStack": [
+                "React",
+                "Javascript",
+                "MUI"
+            ]
         },
         {
             "title": "AF AI Wrapper",
@@ -82,6 +101,12 @@
                     "icon": "FitnessCenter",
                     "details": "Generación de rutinas personalizadas con Gemini AI, considerando parámetros proporcionados por el usuario, como altura, peso, objetivos, limitaciones físicas, equipo disponible, tiempo disponible y más."
                 }
+            ],
+            "techStack": [
+                "React",
+                "Javascript",
+                "MUI",
+                "ExpressJS"
             ]
         },
         {
@@ -100,6 +125,12 @@
                     "icon": "Checklist",
                     "details": "Reportes: Muestra información esencial sobre ventas, como ventas por producto, tendencias estacionales, etc."
                 }
+            ],
+            "techStack": [
+                "React",
+                "Javascript",
+                "Bootstrap",
+                ".NET"
             ]
         }
     ]

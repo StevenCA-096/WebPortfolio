@@ -1,3 +1,8 @@
+import dockerLogo from '../assets/Images/technologiesLogos/docker.png'
+import bootstrapLogo from '../assets/Images/technologiesLogos/bootstrap.png'
+import MUI from '../assets/Images/technologiesLogos/MUI.png'
+import Node from '../assets/Images/technologiesLogos/Node.png'
+
 export const MySkillsList = [
     {
       title: 'SQL',
@@ -21,6 +26,18 @@ export const MySkillsList = [
     },
     {
       title: 'ExpressJS',
-      imgUrl: 'https://cdn.groovetechnology.com/wp-content/uploads/2023/08/expressjs.png',
+      imgUrl: Node,
+    },
+    {
+      title: 'Bootstrap',
+      imgUrl: bootstrapLogo,
+    },
+    {
+      title: 'MUI',
+      imgUrl: MUI,
+    },
+    {
+      title: 'Docker',
+      imgUrl: dockerLogo,
     },
   ];

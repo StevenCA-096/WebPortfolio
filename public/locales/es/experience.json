@@ -2,11 +2,11 @@
   "myExperience": "Mi Experiencia",
   "experience": [
     {
-      "title": "Desarrollador Freelance",
-      "enterprise": "CTP Hojancha",
-      "description": "Como desarrollador freelance, participé activamente en reuniones con el cliente y el equipo de desarrollo para lograr un sistema de inscripción para una escuela secundaria. Este proyecto fue construido utilizando React, NESTJS y MySQL.",
-      "startDate": "01/06/2024",
-      "endDate": "01/12/2024"
+      "title": "Desarrollador de Software",
+      "enterprise": "AF Seguros",
+      "description": "Como desarrollador de software, estuve a cargo de construir nuevas interfaces de usuario utilizando React y Firebase. En algunos proyectos, también construí APIs REST usando ExpressJS para utilizar Firebase Admin, proporcionar una capa adicional de seguridad y manejar disparadores de Firebase con listeners.",
+      "startDate": "09/12/2024",
+      "endDate": "Current"
     },
     {
       "title": "Practicante de Desarrollo de Software",
@@ -16,11 +16,11 @@
       "endDate": "21/11/2024"
     },
     {
-      "title": "Desarrollador de Software",
-      "enterprise": "AF Seguros",
-      "description": "Como desarrollador de software, estuve a cargo de construir nuevas interfaces de usuario utilizando React y Firebase. En algunos proyectos, también construí APIs REST usando ExpressJS para utilizar Firebase Admin, proporcionar una capa adicional de seguridad y manejar disparadores de Firebase con listeners.",
-      "startDate": "09/12/2024",
-      "endDate": "Current"
+      "title": "Desarrollador Freelance",
+      "enterprise": "CTP Hojancha",
+      "description": "Como desarrollador freelance, participé activamente en reuniones con el cliente y el equipo de desarrollo para lograr un sistema de inscripción para una escuela secundaria. Este proyecto fue construido utilizando React, NESTJS y MySQL.",
+      "startDate": "01/06/2024",
+      "endDate": "01/12/2024"
     }
   ]
 }

@@ -8,6 +8,9 @@
     },
     "footer":{
         "designedBy":"Designed By",
-        "message":"With patient and a cup of coffe"
+        "message":"With patient and a cup of coffe",
+        "madeIn":"Made in Costa Rica",
+        "thanksForVisit":"Thanks for visiting!",
+        "builtWith":"Built with React.js, MUI & lots of"
     }
 }

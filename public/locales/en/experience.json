@@ -1,26 +1,26 @@
 {
-    "myExperience":"My Experience",
-    "experience": [
+  "myExperience": "My Experience",
+  "experience": [
     {
-      "title": "Freelance Developer",
-      "enterprise":"CTP Hojancha",
-      "description": "As a freelance developer, I actively participated in meetings with the customer and development team, in order to accomplish an enrollment system for a high school. This project was built using React, NESTJS, and MySQL.",
-      "startDate": "01/06/2024",
-      "endDate": "01/12/2024"
+      "title": "Software Developer",
+      "enterprise": "AF Seguros",
+      "description": "As a software developer, I was in charge of building new user interfaces using React and Firebase. In some projects, I was also building REST APIs using ExpressJS to use Firebase Admin, provide an extra security layer, and handle Firebase Triggers with listeners.",
+      "startDate": "09/12/2024",
+      "endDate": "Current"
     },
     {
       "title": "Software Developer Intern",
-      "enterprise":"AF Seguros",
+      "enterprise": "AF Seguros",
       "description": "As a software developer intern, I was able to collaborate with a team from an external enterprise which provided the development service. I had to accomplish different tasks working under the Scrum Methodology with React and Firebase while attending to the customer's decisions about the applications I was involved in.",
       "startDate": "08/08/2024",
       "endDate": "21/11/2024"
     },
     {
-      "title": "Software Developer",
-      "enterprise":"AF Seguros",
-      "description": "As a software developer, I was in charge of building new user interfaces using React and Firebase. In some projects, I was also building REST APIs using ExpressJS to use Firebase Admin, provide an extra security layer, and handle Firebase Triggers with listeners.",
-      "startDate": "09/12/2024",
-      "endDate": "Current"
+      "title": "Freelance Developer",
+      "enterprise": "CTP Hojancha",
+      "description": "As a freelance developer, I actively participated in meetings with the customer and development team, in order to accomplish an enrollment system for a high school. This project was built using React, NESTJS, and MySQL.",
+      "startDate": "01/06/2024",
+      "endDate": "01/12/2024"
     }
   ]
 }

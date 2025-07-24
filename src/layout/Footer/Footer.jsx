@@ -2,7 +2,7 @@ import { Box, Container, Divider, Stack, Typography, alpha, useTheme } from '@mu
 import React from 'react'
 import Networks from './Networks'
 import { useTranslation } from 'react-i18next'
-import { Code, Favorite } from '@mui/icons-material'
+import { Code, Coffee, CoffeeMaker, Favorite } from '@mui/icons-material'
 import GradientText from '../../components/Text/GradientText'
 
 const Footer = () => {
@@ -80,9 +80,8 @@ const Footer = () => {
                     fontSize: '0.85rem'
                   }}
                 >
-                  {t('footer.message')}
+                  {t('footer.message')} ☕
                 </Typography>
-                <Favorite sx={{ color: '#ff6b6b', fontSize: 16 }} />
               </Box>
             </Stack>
 
@@ -90,7 +89,7 @@ const Footer = () => {
             <Networks />
 
             {/* Copyright */}
-            <Typography 
+            {/* <Typography 
               variant="caption" 
               sx={{ 
                 color: alpha(theme.palette.text.secondary, 0.7),
@@ -99,7 +98,7 @@ const Footer = () => {
               }}
             >
               © {new Date().getFullYear()} Steven Cordero. All rights reserved.
-            </Typography>
+            </Typography> */}
           </Stack>
 
           {/* Enlaces adicionales (opcional) */}
@@ -112,7 +111,7 @@ const Footer = () => {
                   fontSize: '0.8rem'
                 }}
               >
-                Made in Costa Rica 🇨🇷
+                {t('footer.madeIn')}
               </Typography>
               <Typography 
                 variant="caption" 
@@ -149,7 +148,7 @@ const Footer = () => {
                 fontSize: '0.7rem'
               }}
             >
-              Built with React.js, MUI & lots of ☕
+              {t('footer.builtWith')} ☕
             </Typography>
             
             <Box

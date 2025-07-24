@@ -8,6 +8,9 @@
     },
     "footer":{
         "designedBy":"Creado Por",
-        "message":"Con paciencia y una taza de café"
+        "message":"Con paciencia y una taza de café",
+        "madeIn":"Hecho en Costa Rica",
+        "thanksForVisit":"Gracias por la visita!",
+        "builtWith":"Creado con React.js, MUI & mucho "
     }
 }

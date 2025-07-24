@@ -1,16 +1,16 @@
-import { 
-    Box, 
-    Card, 
-    CardContent, 
-    Chip, 
-    Grid, 
-    IconButton, 
-    List, 
-    ListItem, 
-    ListItemAvatar, 
-    ListItemText, 
+import {
+    Box,
+    Card,
+    CardContent,
+    Chip,
+    Grid,
+    IconButton,
+    List,
+    ListItem,
+    ListItemAvatar,
+    ListItemText,
     Stack,
-    Typography, 
+    Typography,
     useTheme,
     alpha
 } from '@mui/material'
@@ -24,7 +24,7 @@ import { MySkillsList } from '../../data/MySkillsList'
 const ProjectItem = ({ project }) => {
     const theme = useTheme()
     const [openModal, setOpenModal] = useState(false)
-
+    console.log(project)
     return (
         <Grid
             container
@@ -43,7 +43,7 @@ const ProjectItem = ({ project }) => {
                     background: `linear-gradient(135deg, 
     ${alpha('#1a1a1a', 0.8)} 0%, 
     ${alpha('#2d2d2d', 0.6)} 100%)`,
-border: `1px solid ${alpha('#FFD700', 0.2)}`,
+                    border: `1px solid ${alpha('#FFD700', 0.2)}`,
                     border: `1px solid rgba(255, 255, 255, 0.08)`,
                     borderRadius: 3,
                     position: 'relative',
@@ -69,16 +69,16 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                     <Grid container spacing={3} alignItems="flex-start">
                         {/* Título del proyecto */}
                         <Grid item xs={12} md={4}>
-                            <Box sx={{ 
-                                display: 'flex', 
+                            <Box sx={{
+                                display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: { xs: 'center', md: 'flex-start' },
                                 mb: { xs: 2, md: 0 }
                             }}>
-                                <GradientText 
-                                    fontSize={{ xs: 24, md: 32, lg: 36 }} 
+                                <GradientText
+                                    fontSize={{ xs: 24, md: 32, lg: 36 }}
                                     textAlign={{ xs: 'center', md: 'left' }}
-                                    sx={{ 
+                                    sx={{
                                         fontWeight: 700,
                                         lineHeight: 1.2,
                                         mb: 2
@@ -86,15 +86,15 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                 >
                                     {project?.title}
                                 </GradientText>
-                                
+
                                 {/* Botón de imágenes mejorado */}
                                 <IconButton
                                     onClick={() => setOpenModal(true)}
                                     sx={{
-                                        bgcolor: alpha(theme.palette.primary.main, 0.1),
-                                        color: theme.palette.primary.main,
+                                        bgcolor: alpha(theme.palette.text.secondary, 0.1),
+                                        color: alpha(theme.palette.text.secondary, 0.9),
                                         '&:hover': {
-                                            bgcolor: alpha(theme.palette.primary.main, 0.2),
+                                            bgcolor: alpha(theme.palette.text.secondary, 0.2),
                                             transform: 'scale(1.05)',
                                         },
                                         transition: 'all 0.2s ease'
@@ -109,9 +109,9 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                         <Grid item xs={12} md={8}>
                             <Stack spacing={3}>
                                 {/* Descripción */}
-                                <Typography 
-                                    variant='body1' 
-                                    sx={{ 
+                                <Typography
+                                    variant='body1'
+                                    sx={{
                                         fontSize: '1.1rem',
                                         lineHeight: 1.7,
                                         color: theme.palette.text.primary
@@ -123,9 +123,9 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                 {/* Skills/Características */}
                                 {project?.skills && project.skills.length > 0 && (
                                     <Box>
-                                        <Typography 
-                                            variant='h6' 
-                                            sx={{ 
+                                        <Typography
+                                            variant='h6'
+                                            sx={{
                                                 mb: 2,
                                                 fontWeight: 600,
                                                 color: theme.palette.text.primary
@@ -135,9 +135,9 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                         </Typography>
                                         <List sx={{ p: 0 }}>
                                             {project.skills.map((skill, index) => (
-                                                <ListItem 
+                                                <ListItem
                                                     key={index}
-                                                    sx={{ 
+                                                    sx={{
                                                         px: 0,
                                                         py: 1,
                                                         '&:hover': {
@@ -149,15 +149,15 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                                     }}
                                                 >
                                                     <ListItemAvatar sx={{ minWidth: 40 }}>
-                                                        <Box sx={{ 
-                                                            color: theme.palette.primary.main,
+                                                        <Box sx={{
+                                                            color: alpha(theme.palette.text.secondary, 0.9),
                                                             display: 'flex',
                                                             alignItems: 'center'
                                                         }}>
                                                             {GetIconFromIconMap(skill?.icon)}
                                                         </Box>
                                                     </ListItemAvatar>
-                                                    <ListItemText 
+                                                    <ListItemText
                                                         primary={skill?.details}
                                                         sx={{
                                                             '& .MuiListItemText-primary': {
@@ -174,9 +174,9 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
 
                                 {/* Tecnologías */}
                                 <Box>
-                                    <Typography 
-                                        variant='h6' 
-                                        sx={{ 
+                                    <Typography
+                                        variant='h6'
+                                        sx={{
                                             mb: 2,
                                             fontWeight: 600,
                                             color: theme.palette.text.primary
@@ -184,13 +184,13 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                     >
                                         Tecnologías utilizadas
                                     </Typography>
-                                    <Stack 
-                                        direction="row" 
-                                        spacing={1.5} 
+                                    <Stack
+                                        direction="row"
+                                        spacing={1.5}
                                         flexWrap="wrap"
                                         useFlexGap
                                     >
-                                        {MySkillsList.map((skill, index) => (
+                                        {MySkillsList.map((skill, index) => ( project?.techStack?.includes(skill?.title) &&
                                             <Chip
                                                 key={index}
                                                 avatar={
@@ -204,15 +204,14 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                                                         }}
                                                     />
                                                 }
-                                                label={skill?.name || `Tech ${index + 1}`}
+                                                label={skill?.title || `Tech ${index + 1}`}
                                                 variant="outlined"
                                                 sx={{
                                                     borderColor: alpha(theme.palette.text.primary, 0.3),
                                                     '&:hover': {
-                                                        bgcolor: alpha(theme.palette.primary.main, 0.1),
-                                                        borderColor: theme.palette.primary.main,
+                                                        borderColor: alpha(theme.palette.text.secondary, 0.9),
                                                         transform: 'translateY(-2px)',
-                                                        boxShadow: `0 4px 12px ${alpha(theme.palette.primary.main, 0.3)}`,
+                                                        boxShadow: `0 4px 12px ${alpha(theme.palette.text.secondary, 0.1)}`,
                                                     },
                                                     transition: 'all 0.2s ease',
                                                     fontSize: '0.875rem',
@@ -228,11 +227,11 @@ border: `1px solid ${alpha('#FFD700', 0.2)}`,
                 </CardContent>
             </Card>
 
-            <MyProjectImagesModal 
-                open={openModal} 
-                onClose={() => setOpenModal(false)} 
-                images={project?.images} 
-                projectFolder={project?.imageFolder} 
+            <MyProjectImagesModal
+                open={openModal}
+                onClose={() => setOpenModal(false)}
+                images={project?.images}
+                projectFolder={project?.imageFolder}
             />
         </Grid>
     )
