@@ -1,4 +1,3 @@
-import React from 'react';
 import { Typography } from '@mui/material';
 
 const GradientText = ({ children, textAlign = '', fontSize = {xs: 25, md: 30}, sx = {}}) => {
