@@ -52,7 +52,7 @@ const NameAndPicture = () => {
                                 width: { xs: 240, sm: 280 },
                                 height: 'auto',
                                 aspectRatio: "16:9",
-                                maskImage: 'linear-gradient(black 75%, transparent)',
+                                maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
                                 borderRadius: '20px 20px 0 0',
                                 filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.3))',
                             }}
@@ -61,7 +61,7 @@ const NameAndPicture = () => {
                         <Box
                             sx={{
                                 position: 'absolute',
-                                bottom: -20,
+                                bottom: {xs:-10,md:-20},
                                 left: '50%',
                                 transform: 'translateX(-50%)',
                                 width: '80%',

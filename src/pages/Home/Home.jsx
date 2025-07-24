@@ -105,6 +105,7 @@ const Home = () => {
                 sx={{
                   color: '#FFD700',
                   fontSize: 28,
+                  pb:{xs:2, md:0}
                 }}
               />
             </motion.div>
