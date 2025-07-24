@@ -16,16 +16,25 @@ import {
 } from '@mui/material'
 import { useState } from 'react'
 import GradientText from '../../components/Text/GradientText'
-import { Image, Launch } from '@mui/icons-material'
+import { Image } from '@mui/icons-material'
 import { GetIconFromIconMap } from '../../utils/iconMap'
 import MyProjectImagesModal from '../../components/Modals/Projects/MyProjectImagesModal'
 import { MySkillsList } from '../../data/MySkillsList'
+import { useTranslation } from 'react-i18next'
+import {motion} from 'framer-motion'
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, index }) => {
     const theme = useTheme()
     const [openModal, setOpenModal] = useState(false)
-    console.log(project)
+    const { t } = useTranslation('projects')
+
     return (
+         <motion.div
+                    initial={{ opacity: 0, x: index % 2 ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                >
         <Grid
             container
             item
@@ -131,7 +140,7 @@ const ProjectItem = ({ project }) => {
                                                 color: theme.palette.text.primary
                                             }}
                                         >
-                                            Características principales
+                                            {t('developedFeatures')}
                                         </Typography>
                                         <List sx={{ p: 0 }}>
                                             {project.skills.map((skill, index) => (
@@ -182,7 +191,7 @@ const ProjectItem = ({ project }) => {
                                             color: theme.palette.text.primary
                                         }}
                                     >
-                                        Tecnologías utilizadas
+                                        {t('techStack')}
                                     </Typography>
                                     <Stack
                                         direction="row"
@@ -190,7 +199,7 @@ const ProjectItem = ({ project }) => {
                                         flexWrap="wrap"
                                         useFlexGap
                                     >
-                                        {MySkillsList.map((skill, index) => ( project?.techStack?.includes(skill?.title) &&
+                                        {MySkillsList.map((skill, index) => (project?.techStack?.includes(skill?.title) &&
                                             <Chip
                                                 key={index}
                                                 avatar={
@@ -234,6 +243,7 @@ const ProjectItem = ({ project }) => {
                 projectFolder={project?.imageFolder}
             />
         </Grid>
+        </motion.div>
     )
 }
 

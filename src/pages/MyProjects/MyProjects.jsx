@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from '@mui/material'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'react-i18next'
+import {motion} from 'framer-motion'
 
 const MyProjects = () => {
   const { t } = useTranslation('projects')
@@ -16,8 +17,8 @@ const MyProjects = () => {
         </Grid>
         <Grid container sx={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", my: 4 }}>
           {
-            projects?.map((project, index) => 
-              <ProjectItem project={project} index={index} key={index} />
+            projects?.map((project, index) =>
+                <ProjectItem project={project} index={index} key={index} />
             )
           }
         </Grid>

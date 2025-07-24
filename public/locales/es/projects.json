@@ -2,6 +2,8 @@
     "title": "Proyectos donde participé",
     "projectImages":"Imagenes del proyecto",
     "noAddedImages":"No hay imagenes agregadas",
+    "developedFeatures":"Características principales",
+    "techStack":"Tecnologías utilizadas",
     "myProjects": [
         {
             "title": "Sitio Web de AF",
