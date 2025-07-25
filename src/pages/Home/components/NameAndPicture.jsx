@@ -4,6 +4,7 @@ import me from '../../../assets/Images/Me/steven.png'
 import GradientText from '../../../components/Text/GradientText'
 import { useTranslation } from 'react-i18next'
 import { Code, Download, Person } from '@mui/icons-material'
+import DownloadCv from './DownloadCv'
 
 const NameAndPicture = () => {
     const { t } = useTranslation('home')
@@ -154,7 +155,7 @@ const NameAndPicture = () => {
                                 color: theme?.palette?.text?.secondary,
                             }}
                             >
-                                <Download /> Resume
+                                <DownloadCv />
                             </Button>
                         </Box>
                     </Stack>

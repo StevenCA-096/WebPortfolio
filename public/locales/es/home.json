@@ -4,5 +4,7 @@
     "sections": {
         "skills": "Habilidades Técnicas",
         "whatIDo": "Mi trabajo"
-    }
+    },
+    "downloadCv":"Curriculum",
+    "scrollDown":"Desliza"
 }

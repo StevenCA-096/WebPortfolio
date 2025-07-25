@@ -5,11 +5,12 @@ import WhatIDo from './components/WhatIDo'
 import { KeyboardArrowDown  } from '@mui/icons-material'
 import NameAndPicture from './components/NameAndPicture'
 import useIsMobile from '../../hooks/isMobile/useIsMobile'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
   const theme = useTheme()
   const isMobile = useIsMobile()
-
+  const {t} = useTranslation('home')
   // Animaciones de entrada
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -95,7 +96,7 @@ const Home = () => {
                 letterSpacing: '1px',
               }}
             >
-              Scroll Down
+              {t('scrollDown')}
             </Typography>
             <motion.div
               animate={{ y: [0, 10, 0] }}
