@@ -42,17 +42,6 @@ const WhatIDo = () => {
         return () => observer.disconnect()
     }, [])
 
-    // Auto-play slider (opcional)
-    useEffect(() => {
-        if (!isMobile || totalSlides <= 1) return
-
-        const interval = setInterval(() => {
-            setCurrentSlide(prev => (prev + 1) % totalSlides)
-        }, 5000) // Cambia cada 5 segundos
-
-        return () => clearInterval(interval)
-    }, [isMobile, totalSlides])
-
     // Navegación del slider
     const goToSlide = useCallback((index) => {
         setCurrentSlide(Math.max(0, Math.min(index, totalSlides - 1)))
@@ -175,6 +164,9 @@ const WhatIDo = () => {
                                                 justifyContent: 'center',
                                                 flexShrink: 0
                                             }}
+                                            onTouchEnd={handleTouchEnd}
+                                            onTouchMove={handleTouchMove}
+                                            onTouchStart={handleTouchStart}
                                         >
                                             <WhatIDoCard 
                                                 icon={item.icon} 

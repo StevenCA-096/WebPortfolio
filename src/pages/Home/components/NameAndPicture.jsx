@@ -148,7 +148,8 @@ const NameAndPicture = () => {
                                     width: { xs: 100, md: 150 },
                                     height: '2px',
                                     background: 'linear-gradient(90deg, #FFD700 0%, transparent 100%)',
-                                    borderRadius: '1px'
+                                    borderRadius: '1px',
+                                    display:{xs:'none', md:'flex'}
                                 }}
                             />
                             <Button sx={{
