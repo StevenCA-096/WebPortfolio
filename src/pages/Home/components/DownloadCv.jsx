@@ -14,7 +14,7 @@ const DownloadCv = () => {
     const handleDownload = () => {
         // Seleccionar CV según idioma actual
         const cvFile = i18n.language === 'en' ? cvEN : cvES
-        const fileName = i18n.language === 'en' ? 'Steven_Cordero_CV_EN.pdf' : 'Steven_Cordero_CV_ES.pdf'
+        const fileName = i18n.language === 'en' ? 'Steven_Andres_Cordero_Alvarez_Resume.pdf' : 'Steven_Andres_Cordero_Alvarez_Curriculum.pdf'
         
         // Crear enlace temporal y descargar
         const link = document.createElement('a')
