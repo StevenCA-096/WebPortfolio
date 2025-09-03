@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next"
 import { motion } from "framer-motion"
 
 // Importa los CVs por idioma desde assets
-import cvEN from '../../../assets/documents/Steven_Andres_Cordero_Alvarez_Resume.pdf'
-import cvES from '../../../assets/documents/Steven_Andres_Cordero_Alvarez_Resume.pdf'
+import cvEN from '@assets/documents/Steven_Andres_Cordero_Alvarez_Resume.pdf'
+import cvES from '@assets/documents/Steven_Andres_Cordero_Alvarez_Curriculum.pdf'
 
 const DownloadCv = () => {
     const { t, i18n } = useTranslation('home')

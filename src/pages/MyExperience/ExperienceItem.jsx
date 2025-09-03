@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, Chip, Grid2, Stack, Typography, alpha, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
-import GradientText from "../../components/Text/GradientText";
+import GradientText from "@components/Text/GradientText";
 import { WorkOutline, CalendarToday } from "@mui/icons-material";
 
 const ExperienceItem = ({ number, title, description, align, enterprise, startDate, endDate }) => {

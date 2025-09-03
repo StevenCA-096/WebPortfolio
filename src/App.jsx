@@ -4,12 +4,18 @@ import i18n from '../i18n'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles/carouselDots.css'
+import './styles/global.css'
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { theme } from './theme/theme';
 
 function App() {
   return (
-    <I18nextProvider i18n={i18n}>
-      <AppRouter />
-    </I18nextProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <I18nextProvider i18n={i18n}>
+        <AppRouter />
+      </I18nextProvider>
+    </ThemeProvider>
   )
 }
 

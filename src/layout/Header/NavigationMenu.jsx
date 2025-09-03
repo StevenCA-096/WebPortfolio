@@ -37,7 +37,6 @@ const NavigationMenu = () => {
                     flexDirection: "row", 
                     alignItems: "center",
                     gap: 2,
-                    ml: -30 
                 }}
             >
                 <NavItems />

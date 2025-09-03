@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { Grid, Box, Fade, Grow } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import GradientText from '../../../components/Text/GradientText'
-import SkillCard from '../../../components/Cards/SkillCard'
+import GradientText from '@components/Text/GradientText'
+import SkillCard from '@components/Cards/SkillCard'
 import { MySkillsList } from '../../../data/MySkillsList'
 
 const MySkills = () => {

@@ -2,15 +2,15 @@ import { Box, Container, Typography, alpha, useTheme } from '@mui/material'
 import { motion } from 'framer-motion'
 import MySkills from './components/MySkills'
 import WhatIDo from './components/WhatIDo'
-import { KeyboardArrowDown  } from '@mui/icons-material'
+import { KeyboardArrowDown } from '@mui/icons-material'
 import NameAndPicture from './components/NameAndPicture'
-import useIsMobile from '../../hooks/isMobile/useIsMobile'
+import useIsMobile from '@hooks/isMobile/useIsMobile'
 import { useTranslation } from 'react-i18next'
 
 const Home = () => {
   const theme = useTheme()
   const isMobile = useIsMobile()
-  const {t} = useTranslation('home')
+  const { t } = useTranslation('home')
   // Animaciones de entrada
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -72,45 +72,47 @@ const Home = () => {
           <NameAndPicture />
 
           {/* Scroll indicator */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.6 }}
-            style={{
-              position: 'absolute',
-              bottom: isMobile ? "-20px" : '30px',
-              left: isMobile? '35%' : '50%',
-              transform: 'translateX(-50%)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '8px',
-              }}
-          >
-            <Typography
-              variant="caption"
-              sx={{
-                color: alpha(theme.palette.text.secondary, 0.7),
-                fontSize: '0.75rem',
-                textTransform: 'uppercase',
-                letterSpacing: '1px',
-              }}
-            >
-              {t('scrollDown')}
-            </Typography>
+          <Box display={{xs:'none', md:'flex'}}>
             <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.5, duration: 0.6 }}
+              style={{
+                position: 'absolute',
+                bottom: isMobile ? "-20px" : '30px',
+                left: isMobile ? '35%' : '50%',
+                transform: 'translateX(-50%)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '8px',
+              }}
             >
-              <KeyboardArrowDown
+              <Typography
+                variant="caption"
                 sx={{
-                  color: '#FFD700',
-                  fontSize: 28,
-                  pb:{xs:2, md:0}
+                  color: alpha(theme.palette.text.secondary, 0.7),
+                  fontSize: '0.75rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
                 }}
-              />
+              >
+                {t('scrollDown')}
+              </Typography>
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <KeyboardArrowDown
+                  sx={{
+                    color: '#FFD700',
+                    fontSize: 28,
+                    pb: { xs: 2, md: 0 },
+                  }}
+                />
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </Box>
         </Box>
       </motion.div>
 
