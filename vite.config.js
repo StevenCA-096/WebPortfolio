@@ -18,7 +18,7 @@ export default defineConfig({
       // Alias for images images
       '@images': path.resolve(__dirname, './src/assets/images'),
       // Alias for project images
-      '@project-images': path.resolve(__dirname, './src/assets/images/Projects'),
+      '@project-images': path.resolve(__dirname, './src/assets/Images/Projects'),
       //Alias for utils
       '@utils': path.resolve(__dirname, './src/utils'),
     }
