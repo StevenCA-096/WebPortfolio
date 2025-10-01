@@ -1,7 +1,6 @@
 import { Container, Grid, Typography } from '@mui/material'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'react-i18next'
-import {motion} from 'framer-motion'
 
 const MyProjects = () => {
   const { t } = useTranslation('projects')

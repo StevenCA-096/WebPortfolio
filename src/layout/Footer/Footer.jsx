@@ -2,13 +2,13 @@ import { Box, Container, Divider, Stack, Typography, alpha, useTheme } from '@mu
 import React from 'react'
 import Networks from './Networks'
 import { useTranslation } from 'react-i18next'
-import { Code, Coffee, CoffeeMaker, Favorite } from '@mui/icons-material'
+import { Code, Coffee, CoffeeMaker, Favorite, Mail } from '@mui/icons-material'
 import GradientText from '../../components/Text/GradientText'
 
 const Footer = () => {
   const theme = useTheme()
   const { t } = useTranslation('layout');
-  
+
   return (
     <Box
       component="footer"
@@ -42,12 +42,14 @@ const Footer = () => {
           justifyContent="space-between"
         >
           {/* Logo/Marca */}
-          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'block' }, width: 170 }}>
             <Stack direction="row" alignItems="center" spacing={1}>
-              <Code sx={{ color: '#FFD700', fontSize: 28 }} />
-              <GradientText fontSize={20} sx={{ fontWeight: 700 }}>
-                Steven Cordero
-              </GradientText>
+              <a href="mailto:scordero096@gmail.com" style={{ display: 'flex', textDecoration:'none' }}>
+                <Mail sx={{ color: '#FFD700', fontSize: 28 }} />
+                <GradientText fontSize={20} sx={{ fontWeight: 700 }}>
+                  scordero096@gmail.com
+                </GradientText>
+              </a>
             </Stack>
           </Box>
 
@@ -55,27 +57,27 @@ const Footer = () => {
           <Stack spacing={3} alignItems="center" sx={{ textAlign: 'center' }}>
             {/* Información del desarrollador */}
             <Stack spacing={1.5} alignItems="center">
-              <Typography 
-                variant="body2" 
-                sx={{ 
+              <Typography
+                variant="body2"
+                sx={{
                   color: theme.palette.text.secondary,
                   fontSize: '0.9rem'
                 }}
               >
                 {t('footer.designedBy')}
               </Typography>
-              
-              <GradientText 
-                fontSize={{ xs: 18, md: 20 }} 
+
+              <GradientText
+                fontSize={{ xs: 18, md: 20 }}
                 sx={{ fontWeight: 600 }}
               >
                 Steven Cordero Alvarez
               </GradientText>
 
               <Box display="flex" alignItems="center" gap={1}>
-                <Typography 
-                  variant="body2" 
-                  sx={{ 
+                <Typography
+                  variant="body2"
+                  sx={{
                     color: theme.palette.text.secondary,
                     fontSize: '0.85rem'
                   }}
@@ -85,48 +87,37 @@ const Footer = () => {
               </Box>
             </Stack>
 
-            {/* Redes sociales */}
+            {/* sotial networks */}
             <Networks />
 
-            {/* Copyright */}
-            {/* <Typography 
-              variant="caption" 
-              sx={{ 
-                color: alpha(theme.palette.text.secondary, 0.7),
-                fontSize: '0.75rem',
-                mt: 2
-              }}
-            >
-              © {new Date().getFullYear()} Steven Cordero. All rights reserved.
-            </Typography> */}
           </Stack>
 
-          {/* Enlaces adicionales (opcional) */}
+          {/* Enlaces adicionales */}
           <Box sx={{ display: { xs: 'none', md: 'block' } }}>
             <Stack spacing={1} alignItems="flex-end">
-              <Typography 
-                variant="caption" 
-                sx={{ 
+              <Typography
+                variant="caption"
+                sx={{
                   color: alpha(theme.palette.text.secondary, 0.8),
                   fontSize: '0.8rem'
                 }}
               >
                 {t('footer.madeIn')}
               </Typography>
-              <Typography 
-                variant="caption" 
-                sx={{ 
+              <Typography
+                variant="caption"
+                sx={{
                   color: alpha(theme.palette.text.secondary, 0.6),
                   fontSize: '0.75rem'
                 }}
               >
-                Pura Vida
+                Pura Vida 🇨🇷
               </Typography>
             </Stack>
           </Box>
         </Stack>
 
-        {/* Línea decorativa inferior */}
+        {/* decorative line bottom */}
         <Box
           sx={{
             mt: 4,
@@ -135,22 +126,22 @@ const Footer = () => {
             textAlign: 'center'
           }}
         >
-          <Stack 
-            direction={{ xs: 'column', sm: 'row' }} 
-            spacing={2} 
-            alignItems="center" 
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={2}
+            alignItems="center"
             justifyContent="center"
           >
-            <Typography 
-              variant="caption" 
-              sx={{ 
+            <Typography
+              variant="caption"
+              sx={{
                 color: alpha(theme.palette.text.secondary, 0.6),
                 fontSize: '0.7rem'
               }}
             >
               {t('footer.builtWith')} ☕
             </Typography>
-            
+
             <Box
               sx={{
                 width: { xs: '100%', sm: 'auto' },
@@ -159,10 +150,10 @@ const Footer = () => {
                 minWidth: { sm: 100 }
               }}
             />
-            
-            <Typography 
-              variant="caption" 
-              sx={{ 
+
+            <Typography
+              variant="caption"
+              sx={{
                 color: alpha(theme.palette.text.secondary, 0.6),
                 fontSize: '0.7rem'
               }}
@@ -173,7 +164,7 @@ const Footer = () => {
         </Box>
       </Container>
 
-      {/* Glow effect de fondo */}
+      {/* Glow effect  */}
       <Box
         sx={{
           position: 'absolute',

@@ -2,8 +2,8 @@ import { Box, Typography, alpha, useTheme } from '@mui/material'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
-import en from '../../assets/Images/AppBar/languages/en.webp'
-import es from '../../assets/Images/AppBar/languages/es.webp'
+import en from '@assets/Images/AppBar/languages/en.webp'
+import es from '@assets/Images/AppBar/languages/es.webp'
 
 const ChangeLanguageButton = () => {
     const { i18n } = useTranslation('layout')
@@ -47,7 +47,8 @@ const ChangeLanguageButton = () => {
                         display: 'flex',
                         alignItems: 'center',
                         gap: 1,
-                        padding: '6px 10px',
+                        py:{xs:0.5},
+                        px:{xs:1},
                         borderRadius: '12px',
                         backdropFilter: 'blur(10px)',
                         border: `1px solid ${alpha('#FFD700', 0.2)}`,
@@ -57,7 +58,7 @@ const ChangeLanguageButton = () => {
                         '&:hover': {
                             border: `1px solid ${alpha('#FFD700', 0.4)}`,
                             boxShadow: `0 4px 20px ${alpha('#FFD700', 0.1)}`
-                        }
+                        },mr:{xs:0.5, sm:0}
                     }}
                 >
                     {/* Flag with loading animation */}
@@ -73,11 +74,11 @@ const ChangeLanguageButton = () => {
                             component="img"
                             src={currentLang === 'en' ? en : es}
                             sx={{
-                                width: {xs: 20, md:24},
                                 height: {xs: 20, md:24},
                                 objectFit: 'contain',
                                 filter: isChanging ? 'brightness(0.7)' : 'none',
-                                transition: 'filter 0.3s ease'
+                                transition: 'filter 0.3s ease',
+                                mt:0.5
                             }}
                         />
                     </motion.div>
@@ -92,7 +93,8 @@ const ChangeLanguageButton = () => {
                             textTransform: 'uppercase',
                             letterSpacing: '0.5px',
                             opacity: isChanging ? 0.6 : 1,
-                            transition: 'opacity 0.3s ease'
+                            transition: 'opacity 0.3s ease',
+                            display:{xs:'none', sm:'flex'}
                         }}
                     >
                         {currentLang}
@@ -180,7 +182,7 @@ const ChangeLanguageButton = () => {
                                             sx={{
                                                 color: theme.palette.text.primary,
                                                 fontWeight: currentLang === lang.code ? 600 : 400,
-                                                fontSize: '0.85rem'
+                                                fontSize: '0.85rem',
                                             }}
                                         >
                                             {lang.label}

@@ -15,10 +15,10 @@ import {
     alpha
 } from '@mui/material'
 import { useState } from 'react'
-import GradientText from '../../components/Text/GradientText'
+import GradientText from '@components/Text/GradientText'
 import { Image } from '@mui/icons-material'
-import { GetIconFromIconMap } from '../../utils/iconMap'
-import MyProjectImagesModal from '../../components/Modals/Projects/MyProjectImagesModal'
+import { GetIconFromIconMap } from '@utils/iconMap'
+import MyProjectImagesModal from '@components/Modals/Projects/MyProjectImagesModal'
 import { MySkillsList } from '../../data/MySkillsList'
 import { useTranslation } from 'react-i18next'
 import {motion} from 'framer-motion'
@@ -150,7 +150,7 @@ const ProjectItem = ({ project, index }) => {
                                                         px: 0,
                                                         py: 1,
                                                         '&:hover': {
-                                                            bgcolor: alpha(theme.palette.action.hover, 0.5),
+                                                            bgcolor: alpha(theme.palette.action.hover, 0.3),
                                                             borderRadius: 2,
                                                             transform: 'translateX(8px)'
                                                         },

@@ -12,11 +12,8 @@ import { useTheme } from '@emotion/react'
 const SkillCard = ({ 
     title = '', 
     icon = '', 
-    level = 'intermediate',
-    category = 'general',
     index = 0,
     loading = false,
-    yearsExperience = 0
 }) => {
     const theme = useTheme()
     const [isHovered, setIsHovered] = useState(false)

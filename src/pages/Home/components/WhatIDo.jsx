@@ -1,12 +1,11 @@
-import React, { useState, useRef, useCallback, useEffect } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { Grid, Box, IconButton, Fade } from '@mui/material'
 import { ChevronLeft, ChevronRight } from '@mui/icons-material'
 import { useTheme } from '@emotion/react'
 import { useTranslation } from 'react-i18next'
-import useIsMobile from '../../../hooks/isMobile/useIsMobile'
-import GradientText from '../../../components/Text/GradientText'
-import { MyWhatIDoList } from '../../../data/MyWhatIDoList'
-import WhatIDoCard from '../../../components/Cards/WhatIDoCard'
+import useIsMobile from '@hooks/isMobile/useIsMobile'
+import GradientText from '@components/Text/GradientText'
+import WhatIDoCard from '@components/Cards/WhatIDoCard'
 
 const WhatIDo = () => {
     const theme = useTheme()
@@ -41,17 +40,6 @@ const WhatIDo = () => {
 
         return () => observer.disconnect()
     }, [])
-
-    // Auto-play slider (opcional)
-    useEffect(() => {
-        if (!isMobile || totalSlides <= 1) return
-
-        const interval = setInterval(() => {
-            setCurrentSlide(prev => (prev + 1) % totalSlides)
-        }, 5000) // Cambia cada 5 segundos
-
-        return () => clearInterval(interval)
-    }, [isMobile, totalSlides])
 
     // Navegación del slider
     const goToSlide = useCallback((index) => {
@@ -175,6 +163,9 @@ const WhatIDo = () => {
                                                 justifyContent: 'center',
                                                 flexShrink: 0
                                             }}
+                                            onTouchEnd={handleTouchEnd}
+                                            onTouchMove={handleTouchMove}
+                                            onTouchStart={handleTouchStart}
                                         >
                                             <WhatIDoCard 
                                                 icon={item.icon} 

@@ -1,7 +1,7 @@
 import { alpha, Box, Button, Grid, Stack, Typography, useTheme } from '@mui/material'
 import { motion } from 'framer-motion'
-import me from '../../../assets/Images/Me/me.png'
-import GradientText from '../../../components/Text/GradientText'
+import me from '@assets/Images/Me/steven.png'
+import GradientText from '@components/Text/GradientText'
 import { useTranslation } from 'react-i18next'
 import { Code, Person } from '@mui/icons-material'
 import DownloadCv from './DownloadCv'
@@ -148,7 +148,8 @@ const NameAndPicture = () => {
                                     width: { xs: 100, md: 150 },
                                     height: '2px',
                                     background: 'linear-gradient(90deg, #FFD700 0%, transparent 100%)',
-                                    borderRadius: '1px'
+                                    borderRadius: '1px',
+                                    display:{xs:'none', md:'flex'}
                                 }}
                             />
                             <Button sx={{

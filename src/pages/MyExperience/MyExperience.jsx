@@ -1,7 +1,4 @@
-import React from "react";
-import { Box, Typography, Grid2, Container } from "@mui/material";
-import { motion } from "framer-motion";
-import GradientText from "../../components/Text/GradientText";
+import { Typography, Grid2, Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import ExperienceItem from "./ExperienceItem";
 
@@ -10,7 +7,7 @@ const MyExperience = () => {
     const experience = t('experience', { returnObjects: true })
     return (
         <Container>
-            <Typography variant="h5" color="white" gutterBottom textAlign="center" mb={2}>
+            <Typography variant="h5" color="white" gutterBottom textAlign="center" mb={4}>
                 {t('myExperience')}
             </Typography>
 
