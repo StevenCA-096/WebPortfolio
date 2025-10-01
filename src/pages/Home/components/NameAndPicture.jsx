@@ -1,9 +1,9 @@
 import { alpha, Box, Button, Grid, Stack, Typography, useTheme } from '@mui/material'
 import { motion } from 'framer-motion'
-import me from '../../../assets/Images/Me/steven.png'
+import me from '../../../assets/Images/Me/me.png'
 import GradientText from '../../../components/Text/GradientText'
 import { useTranslation } from 'react-i18next'
-import { Code, Download, Person } from '@mui/icons-material'
+import { Code, Person } from '@mui/icons-material'
 import DownloadCv from './DownloadCv'
 
 const NameAndPicture = () => {
