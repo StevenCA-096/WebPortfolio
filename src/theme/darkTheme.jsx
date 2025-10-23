@@ -16,14 +16,12 @@ styleSheet.innerText = gilroyFontFace;
 document.head.appendChild(styleSheet);
 
 // Create MUI theme
-export const theme = createTheme({
+export const darkTheme = createTheme({
   palette: {
     text: {
       primary: '#ffff', // Default text color is white
-      secondary: "#FFD700"
-    },
-    gradient:{
-      gold:''
+      secondary: "#FFD700",
+      gradient: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 60%, #FFD700 80%)'
     },
     background: {
       default: '#181818', // Base dark background

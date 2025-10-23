@@ -4,9 +4,11 @@ import me from '@assets/Images/Me/steven.png'
 import GradientText from '@components/Text/GradientText'
 import { useTranslation } from 'react-i18next'
 import { Code, Person } from '@mui/icons-material'
-import DownloadCv from './DownloadCv'
+import DownloadCv from '@components/Button/DownloadCv'
+import useIsDarkMode from '../../../hooks/isDarkMode/useIsDarkMode'
 
 const NameAndPicture = () => {
+    const isDarkMode = useIsDarkMode()
     const { t } = useTranslation('home')
     const theme = useTheme()
 
@@ -55,7 +57,7 @@ const NameAndPicture = () => {
                                 aspectRatio: "16:9",
                                 maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
                                 borderRadius: '20px 20px 0 0',
-                                filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.3))',
+                                filter: 'drop-shadow(0 5px 5px rgba(0,0,0,0.3))',
                             }}
                         />
                         {/* Glow effect detrás de la imagen */}
@@ -181,7 +183,6 @@ const NameAndPicture = () => {
                                 aspectRatio: "16:9",
                                 maskImage: 'linear-gradient(black 75%, transparent)',
                                 borderRadius: '20px 20px 0 0',
-                                filter: 'drop-shadow(0 15px 40px rgba(0,0,0,0.4))',
                                 transition: 'transform 0.3s ease',
                                 '&:hover': {
                                     transform: 'translateY(-10px) scale(1.02)'

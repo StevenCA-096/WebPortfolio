@@ -40,4 +40,12 @@ export const MySkillsList = [
       title: 'Docker',
       imgUrl: dockerLogo,
     },
+    {
+      title:"Typescript",
+      imgUrl:"https://cdn.iconscout.com/icon/free/png-256/free-typescript-icon-svg-download-png-2945272.png?f=webp"
+    },
+    {
+      title:"Redux",
+      imgUrl:"https://cdn.iconscout.com/icon/free/png-256/free-redux-logo-icon-svg-download-png-3030243.png?f=webp"
+    }
   ];

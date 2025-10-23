@@ -14,6 +14,7 @@ import AutoModeIcon from '@mui/icons-material/AutoMode'
 import DesignServicesIcon from '@mui/icons-material/DesignServices'
 import ComputerIcon from '@mui/icons-material/Computer'
 import RepeatIcon from '@mui/icons-material/Repeat'
+import Restaurant from '@mui/icons-material/Restaurant'
 
 export const iconMap = {
   Done: DoneIcon,
@@ -31,7 +32,8 @@ export const iconMap = {
   AutoMode: AutoModeIcon,
   DesignServices: DesignServicesIcon,
   Computer: ComputerIcon,
-  Repeat: RepeatIcon
+  Repeat: RepeatIcon,
+  Dining: Restaurant
 }
 
 export const GetIconFromIconMap = (iconName) => {

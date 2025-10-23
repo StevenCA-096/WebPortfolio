@@ -21,6 +21,7 @@ import afPlatformDesktopDashboard from '@project-images/AF-Platform/desktop/dash
 import afPlatformDesktopModule from '@project-images/AF-Platform/desktop/module.png'
 import afPlatformMobileDashboard from '@project-images/AF-Platform/mobile/dashboard.png'
 import afPlatformMobileModule from '@project-images/AF-Platform/mobile/module.png'
+import useIsDarkMode from '../../../hooks/isDarkMode/useIsDarkMode'
 
 const imageMap = {
   'AF-Website': {
@@ -47,7 +48,7 @@ const imageMap = {
 const ImageWithSkeleton = ({ src, alt, onClick, sx }) => {
   const [loaded, setLoaded] = useState(false)
   const [error, setError] = useState(false)
-
+  const isDarkMode = useIsDarkMode()
   return (
     <Box sx={{ position: 'relative', ...sx }}>
       {!loaded && !error && (
@@ -100,7 +101,7 @@ const ImageWithSkeleton = ({ src, alt, onClick, sx }) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: '#333',
+            backgroundColor: isDarkMode ? "#202020" : '#ebebebff' ,
             borderRadius: 2,
             color: '#666'
           }}
@@ -116,6 +117,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
   const [zoomedImage, setZoomedImage] = useState(null)
   const [zoomedImageLoaded, setZoomedImageLoaded] = useState(false)
   const { t } = useTranslation('projects')
+  const isDarkMode = useIsDarkMode()
 
   const resolvedImages = images
     .map(imgName => {
@@ -148,8 +150,8 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
 
   return (
     <>
-      <Dialog open={open} onClose={onClose} PaperProps={{ sx: { background: "#202020" } }}>
-        <DialogTitle sx={{ color: 'white' }}>
+      <Dialog open={open} onClose={onClose} PaperProps={{ sx: { background: isDarkMode ? "#202020" : '#ebebebff' } }}>
+        <DialogTitle>
           {t('projectImages')}
         </DialogTitle>
         <DialogContent sx={{ overflow: "hidden", mx: 1, minHeight: 200, mb:1}}>
@@ -178,7 +180,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
         onClose={handleCloseZoom}
         fullWidth
         maxWidth="lg"
-        PaperProps={{ sx: { backgroundColor: '#121212' } }}
+        PaperProps={{ sx: { backgroundColor: isDarkMode ? "#202020" : '#ebebebff'  } }}
       >
         <DialogContent sx={{ display: 'flex', justifyContent: 'center', p: 1 }}>
           {zoomedImage && (

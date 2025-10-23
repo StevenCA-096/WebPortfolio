@@ -6,6 +6,10 @@
         "toEn":"Change to English",
         "toEs":"Change to Spanish"
     },
+    "drawer":{
+        "portfolio":"Portfolio",
+        "navigation": "Navigation"
+    },
     "footer":{
         "designedBy":"Designed By",
         "message":"With patient and a cup of coffe",

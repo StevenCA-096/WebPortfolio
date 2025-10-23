@@ -3,32 +3,32 @@
       {
         "icon": "LockClock",
         "title": "Realtime communication",
-        "text": "Established real-time communication between apps with WebSockets"
+        "text": "Establish real-time communication between apps with WebSockets"
       },
       {
         "icon": "Security",
         "title": "Security",
-        "text": "Managed app security and role-based permissions with JWT"
+        "text": "Manage app security and role-based permissions with JWT"
       },
       {
         "icon": "AutoMode",
         "title": "Automate tasks",
-        "text": "Created jobs to automate repetitive tasks and create backups"
+        "text": "Creat jobs to automate repetitive tasks and create backups"
       },
       {
         "icon": "DesignServices",
         "title": "UI Interfaces",
-        "text": "Created UI Interfaces using React and different component libraries: MUI, ChakraUI, React-Bootstrap"
+        "text": "Create responsive UI Interfaces using React, MUI, ChakraUI and React-Bootstrap"
       },
       {
         "icon": "Computer",
         "title": "Server Side",
-        "text": "Created RESTful APIs with different frameworks and databases: .NET - SQL Server, NestJS - MySQL"
+        "text": "Create RESTful APIs with different frameworks and databases: .NET, NestJS, SQL Server, MySQL"
       },
       {
         "icon": "Repeat",
         "title": "Agile Experience",
-        "text": "Participated in projects managed with Scrum methodology"
+        "text": "Participate in projects managed with Scrum methodology"
       }
     ]
   }

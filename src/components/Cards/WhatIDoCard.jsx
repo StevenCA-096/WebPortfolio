@@ -1,18 +1,18 @@
-import React, { useState, useMemo } from 'react'
-import { Box, Typography, Grow } from '@mui/material'
-import { useTheme } from '@emotion/react'
+import { useState, useMemo } from 'react'
+import { Box, Typography, Grow, useTheme } from '@mui/material'
 import GradientText from '../Text/GradientText'
 import { GetIconFromIconMap } from '../../utils/iconMap'
+import useIsDarkMode from '../../hooks/isDarkMode/useIsDarkMode'
 
 const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
+    const isDarkMode = useIsDarkMode()
     const theme = useTheme()
     const [isHovered, setIsHovered] = useState(false)
 
     // Estilos dinámicos de la tarjeta
     const cardStyles = useMemo(() => ({
-        width: { xs: '100%', sm: 320, md: 300 },
+        width: '100%' ,
         padding: { xs: 3, md: 4 },
-        backgroundColor: 'rgba(27, 26, 26, 0.95)',
         borderRadius: 3,
         borderBottom: `4px solid ${theme?.palette?.text?.secondary || '#FFD700'}`,
         display: 'flex',
@@ -21,7 +21,6 @@ const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
         alignItems: 'center',
         gap: 2,
         textAlign: 'center',
-        color: 'white',
         minHeight: { xs: 250, md: 300 },
         height: 'auto',
         position: 'relative',
@@ -32,11 +31,10 @@ const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
         tapHighlightColor: 'transparent',
         userSelect: 'none',
         WebkitUserSelect: 'none',
-        
         // Glassmorphism effect
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
-        border: `1px solid ${isHovered ? 'rgba(255, 215, 0, 0.3)' : 'rgba(255, 255, 255, 0.1)'}`,
+        border: `1px solid ${isHovered ? 'rgba(255, 215, 0, 0.3)' : isDarkMode? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'}`,
         
         // Gradient overlay
         '&::before': {
@@ -76,8 +74,8 @@ const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
         // Hover effects
         transform: isHovered ? 'translateY(-12px) scale(1.03)' : 'translateY(0) scale(1)',
         boxShadow: isHovered 
-            ? '0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.2)' 
-            : '0 8px 25px rgba(0, 0, 0, 0.2)'
+            ? '0 1px 4px rgba(0, 0, 0, 0.4), 0 0 4px rgba(255, 215, 0, 0.2)' 
+            : ''
     }), [isHovered, theme?.palette?.text?.secondary])
 
     // Estilos del icono
@@ -94,7 +92,6 @@ const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
 
     // Estilos del texto
     const textStyles = useMemo(() => ({
-        color: 'rgba(255, 255, 255, 0.9)',
         fontFamily: 'Gilroy, sans-serif',
         fontSize: { xs: '0.9rem', md: '1rem' },
         lineHeight: 1.6,
@@ -103,7 +100,7 @@ const WhatIDoCard = ({ icon, title, text, index = 0, isActive = true }) => {
         position: 'relative',
         transition: 'color 0.3s ease',
         ...(isHovered && {
-            color: 'rgba(255, 255, 255, 1)'
+            color: theme.palette.text.gradient
         })
     }), [isHovered])
 

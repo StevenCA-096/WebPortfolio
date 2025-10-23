@@ -51,7 +51,7 @@ const ChangeLanguageButton = () => {
                         px:{xs:1},
                         borderRadius: '12px',
                         backdropFilter: 'blur(10px)',
-                        border: `1px solid ${alpha('#FFD700', 0.2)}`,
+                        border: `1px solid ${alpha('#FFD700', 0.4)}`,
                         cursor: 'pointer',
                         transition: 'all 0.3s ease',
                         WebkitTapHighlightColor: 'transparent',
@@ -111,7 +111,7 @@ const ChangeLanguageButton = () => {
                                 height: 0,
                                 borderLeft: '4px solid transparent',
                                 borderRight: '4px solid transparent',
-                                borderTop: `4px solid ${alpha('#FFD700', 0.8)}`,
+                                borderTop: `4px solid ${alpha('#FFD700', 1)}`,
                                 ml: 0.5
                             }}
                         />

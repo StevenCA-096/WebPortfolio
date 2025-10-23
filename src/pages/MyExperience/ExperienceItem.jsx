@@ -2,9 +2,11 @@ import { Box, Card, CardContent, Chip, Grid2, Stack, Typography, alpha, useTheme
 import { motion } from "framer-motion";
 import GradientText from "@components/Text/GradientText";
 import { WorkOutline, CalendarToday } from "@mui/icons-material";
+import useIsDarkMode from "../../hooks/isDarkMode/useIsDarkMode";
 
 const ExperienceItem = ({ number, title, description, align, enterprise, startDate, endDate }) => {
     const theme = useTheme();
+    const isDarkMode = useIsDarkMode()
     
     return (
         <motion.div
@@ -27,9 +29,9 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                     <Card
                         elevation={0}
                         sx={{
-                            background: `linear-gradient(135deg, 
+                            background: isDarkMode ? `linear-gradient(135deg, 
                                 rgba(255, 255, 255, 0.03) 0%, 
-                                rgba(255, 255, 255, 0.01) 100%)`,
+                                rgba(255, 255, 255, 0.03) 100%)` : '',
                             border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
                             borderRadius: 3,
                             position: 'relative',

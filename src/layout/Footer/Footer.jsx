@@ -1,8 +1,7 @@
 import { Box, Container, Divider, Stack, Typography, alpha, useTheme } from '@mui/material'
-import React from 'react'
 import Networks from './Networks'
 import { useTranslation } from 'react-i18next'
-import { Code, Coffee, CoffeeMaker, Favorite, Mail } from '@mui/icons-material'
+import { Mail } from '@mui/icons-material'
 import GradientText from '../../components/Text/GradientText'
 
 const Footer = () => {

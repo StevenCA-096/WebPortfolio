@@ -6,8 +6,10 @@ import { useTranslation } from 'react-i18next'
 import useIsMobile from '@hooks/isMobile/useIsMobile'
 import GradientText from '@components/Text/GradientText'
 import WhatIDoCard from '@components/Cards/WhatIDoCard'
+import { useThemeContext } from '../../../context/ThemeContext'
 
 const WhatIDo = () => {
+    const {theme: currentTheme} = useThemeContext()
     const theme = useTheme()
     const { t: title } = useTranslation('home')
     const { t: whatIDo } = useTranslation('whatIDo')
@@ -77,30 +79,13 @@ const WhatIDo = () => {
         }
     }, [nextSlide, prevSlide])
 
-    // Estilos para el contenedor de la sección
-    const sectionStyles = {
-        position: 'relative',
-        py: { xs: 6, md: 10 },
-        '&::before': {
-            content: '""',
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            width: '300px',
-            height: '300px',
-            background: 'radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%)',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 0,
-            pointerEvents: 'none'
-        }
-    }
 
     if (!whatIDoList || whatIDoList.length === 0) {
         return null
     }
 
     return (
-        <Box ref={sectionRef} sx={sectionStyles}>
+        <Box ref={sectionRef} >
             <Grid container spacing={4}>
                 {/* Header */}
                 <Grid item xs={12}>
@@ -135,7 +120,7 @@ const WhatIDo = () => {
                 <Grid item xs={12}>
                     {isMobile ? (
                         // Mobile Slider Version
-                        <Box sx={{ position: 'relative', px: 2 }}>
+                        <Box sx={{ position: 'relative' }}>
                             <Box
                                 ref={sliderRef}
                                 sx={{
@@ -237,7 +222,7 @@ const WhatIDo = () => {
                                             width: currentSlide === index ? 24 : 8,
                                             height: 8,
                                             borderRadius: 4,
-                                            backgroundColor: currentSlide === index ? '#FFD700' : 'rgba(255, 255, 255, 0.3)',
+                                            backgroundColor: currentSlide === index ? '#FFD700' : currentTheme == 'dark' ? 'rgba(255, 255, 255, 0.3)' : 'rgba(17, 8, 8, 0.3)',
                                             cursor: 'pointer',
                                             transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                                             boxShadow: currentSlide === index ? '0 0 10px rgba(255, 215, 0, 0.5)' : 'none',
@@ -256,9 +241,10 @@ const WhatIDo = () => {
                                 container 
                                 spacing={4} 
                                 sx={{ 
+                                    display:"flex",
                                     justifyContent: 'center',
                                     position: 'relative',
-                                    zIndex: 1
+                                    zIndex: 1,
                                 }}
                             >
                                 {whatIDoList.map((item, index) => (
@@ -270,7 +256,6 @@ const WhatIDo = () => {
                                         key={index}
                                         sx={{ 
                                             display: 'flex', 
-                                            justifyContent: 'center' 
                                         }}
                                     >
                                         <WhatIDoCard 

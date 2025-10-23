@@ -29,12 +29,13 @@
                 "Firebase",
                 "React",
                 "Javascript",
-                "MUI"
+                "MUI",
+                "Redux"
             ]
         },
         
         {
-            "title": "Enrollment System for CTP Hojancha",
+            "title": "Enrollment and dining System for CTP Hojancha",
             "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
             "skills": [
                 {
@@ -48,6 +49,10 @@
                 {
                     "icon": "Create",
                     "details": "Enrollment Maintenance: Manages and updates student enrollments based on institutional needs."
+                },
+                {
+                    "icon": "Dining",
+                    "details": "Dining Management: Manage the attendances, paymentes, and dining scholarships with reports dedicated to dining data."
                 }
             ],
             "images": [
@@ -63,7 +68,8 @@
                 "Bootstrap",
                 "MySql",
                 "NestJS",
-                "Docker"
+                "Docker",
+                "Typescript"
             ]
         },
         {
@@ -93,7 +99,8 @@
             "techStack": [
                 "React",
                 "Javascript",
-                "MUI"
+                "MUI",
+                "Redux"
             ]
         },
         {

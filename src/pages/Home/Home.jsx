@@ -1,9 +1,9 @@
 import { Box, Container, Typography, alpha, useTheme } from '@mui/material'
 import { motion } from 'framer-motion'
-import MySkills from './components/MySkills'
-import WhatIDo from './components/WhatIDo'
+import MySkills from './sections/MySkills'
+import WhatIDo from './sections/WhatIDo'
 import { KeyboardArrowDown } from '@mui/icons-material'
-import NameAndPicture from './components/NameAndPicture'
+import NameAndPicture from './sections/NameAndPicture'
 import useIsMobile from '@hooks/isMobile/useIsMobile'
 import { useTranslation } from 'react-i18next'
 

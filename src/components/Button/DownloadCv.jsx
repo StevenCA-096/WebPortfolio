@@ -1,14 +1,15 @@
 import { Download } from "@mui/icons-material"
-import { Button, Box, alpha, useTheme } from "@mui/material"
+import { Button, alpha, useTheme } from "@mui/material"
 import { useTranslation } from "react-i18next"
 import { motion } from "framer-motion"
 
 // Importa los CVs por idioma desde assets
-import cvEN from '../../../assets/documents/Steven_Andres_Cordero_Alvarez_Resume.pdf'
-import cvES from '../../../assets/documents/Steven_Andres_Cordero_Alvarez_Curriculum.pdf'
+import cvEN from '@assets/documents/Steven_Andres_Cordero_Alvarez_Resume.pdf'
+import cvES from '@assets/documents/Steven_Andres_Cordero_Alvarez_Curriculum.pdf'
 
 const DownloadCv = () => {
     const { t, i18n } = useTranslation('home')
+    const theme = useTheme()
 
     // Función para descargar el CV según idioma
     const handleDownload = () => {
@@ -35,7 +36,7 @@ const DownloadCv = () => {
                 startIcon={<Download />}
                 sx={{
                     background: `linear-gradient(135deg, ${alpha('#FFD700', 0.9)} 0%, ${alpha('#FFA500', 0.8)} 100%)`,
-                    color: '#000',
+                    color: 'rgba(20, 20, 20, 1)',
                     fontWeight: 600,
                     fontSize: '0.9rem',
                     padding: '10px 20px',
