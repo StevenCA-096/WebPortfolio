@@ -7,6 +7,7 @@
     "myProjects": [
         {
             "title": "AF Website",
+            "enterprise": "AF Seguros",
             "description": "This project was developed to update the previous AF Website using modern technologies such as ReactJS, ExpressJS, and Firebase while giving the site a fresher look and feel. The website included the following functionalities:",
             "skills": [
                 {
@@ -36,6 +37,7 @@
         
         {
             "title": "Enrollment and dining System for CTP Hojancha",
+            "enterprise": "CTP Hojancha",
             "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
             "skills": [
                 {
@@ -74,6 +76,7 @@
         },
         {
             "title": "AF Platform",
+            "enterprise": "AF Seguros",
             "description": "This project was for an insurance company called AF Seguros and was developed by a company called Northtec. The technologies used were ReactJS with Firebase for data storage, file management, and authentication. The purpose of this project was to handle core operations such as insurance quotations, sales commissions, the product catalog, and customer relationship management.",
             "skills": [
                 {
@@ -105,6 +108,7 @@
         },
         {
             "title": "AF AI Wrapper",
+            "enterprise": "AF Seguros",
             "description": "The purpose of this AI wrapper was to create different AI functionalities using Gemini for some of AF Seguros' applications, such as AllSports+ (a fitness app) and the AF Website. ReactJS was used for the frontend, and ExpressJS was used to create a REST API that manages the Gemini service and prompts.",
             "skills": [
                 {
@@ -121,6 +125,7 @@
         },
         {
             "title": "Online Sales System For Coopepilangosta",
+            "enterprise": "Coopepilangosta R.L",
             "description": "During this project, I was able to collaborate with a team to develop an online sales system with the core functionalities and controls required for an application of this nature. Some of these features include:",
             "skills": [
                 {
