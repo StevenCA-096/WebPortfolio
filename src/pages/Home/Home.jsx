@@ -72,7 +72,7 @@ const Home = () => {
           <NameAndPicture />
 
           {/* Scroll indicator */}
-          <Box display={{xs:'none', md:'flex'}}>
+          <Box display={{ xs: 'none', md: 'flex' }}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from '@mui/material'
 import ProjectItem from './ProjectItem'
 import { useTranslation } from 'react-i18next'
+import GradientText from '../../components/Text/GradientText'
 
 const MyProjects = () => {
   const { t } = useTranslation('projects')
@@ -10,9 +11,9 @@ const MyProjects = () => {
     <Container maxWidth='lg'>
       <Grid container>
         <Grid container item sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-          <Typography variant='h5'>
+          <GradientText variant='h5'>
             {t('title')} {/* Obtiene el título traducido */}
-          </Typography>
+          </GradientText>
         </Grid>
         <Grid container sx={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", my: 4 }}>
           {

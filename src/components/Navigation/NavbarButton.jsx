@@ -1,13 +1,19 @@
-import { Typography } from "@mui/material"
+import { Typography, useTheme } from "@mui/material"
 import { useLocation } from "react-router-dom"
 import { useMemo } from "react"
 
-const createActiveStyles = (isActive) => ({
+const createActiveStyles = (isActive, textGradient) => ({
     display: 'inline-block',
     position: 'relative',
-    color: isActive ? '#FFD700' : 'inherit',
+    color: isActive ? 'transparent' : 'inherit',
     fontWeight: isActive ? 600 : 400,
     transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    ...(isActive && {
+        backgroundImage: textGradient,
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+    }),
     
     '&::after': {
         content: '""',
@@ -16,30 +22,36 @@ const createActiveStyles = (isActive) => ({
         left: 0,
         width: isActive ? '100%' : '0%',
         height: '2px',
-        background: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 50%, #FFD700 100%)',
+        background: textGradient,
         borderRadius: '1px',
         transition: 'width 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-        boxShadow: isActive ? '0 0 8px rgba(255, 215, 0, 0.5)' : 'none'
+        boxShadow: 'none'
     },
     
     '&:hover': {
-        color: '#FFD700',
+        color: 'transparent',
+        backgroundImage: textGradient,
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
         transform: 'translateY(-1px)',
         
         '&::after': {
             width: '100%',
-            boxShadow: '0 0 12px rgba(255, 215, 0, 0.6)'
+            boxShadow: 'none'
         }
     }
 })
 
 export const NavBarButton = ({ text, route }) => {
+    const theme = useTheme()
     const location = useLocation()
     const isActive = location.pathname === route
+    const textGradient = theme.palette.gradients?.text ?? theme.palette.text.gradient
     
     const buttonStyles = useMemo(() => 
-        createActiveStyles(isActive), 
-        [isActive]
+        createActiveStyles(isActive, textGradient), 
+        [isActive, textGradient]
     )
     
     return (

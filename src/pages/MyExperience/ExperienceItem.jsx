@@ -22,7 +22,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                 alignItems="center"
                 justifyContent={align === "left" ? "flex-start" : "flex-end"}
             >
-                {/* Spacer para desktop cuando align es right */}
                 {align === "right" && <Grid2 size={{ xs: 0, md: 1 }} />}
                 
                 <Grid2 size={{ xs: 12, md: 6 }}>
@@ -42,7 +41,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                 boxShadow: `0 12px 40px rgba(255, 215, 0, 0.1)`,
                                 border: `1px solid ${alpha('#FFD700', 0.2)}`,
                             },
-                            // Línea conectora vertical (solo visible en desktop)
                             '&::before': {
                                 content: '""',
                                 position: 'absolute',
@@ -59,7 +57,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                     >
                         <CardContent sx={{ p: 3 }}>
                             <Stack spacing={2.5}>
-                                {/* Header con número y fechas */}
                                 <Box display="flex" alignItems="center" justifyContent="space-between">
                                     <Box display="flex" alignItems="center" gap={2}>
                                         <Box
@@ -95,7 +92,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                     </Box>
                                 </Box>
 
-                                {/* Título y empresa */}
                                 <Box>
                                     <GradientText 
                                         fontSize={{ xs: 18, md: 20 }} 
@@ -123,7 +119,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                     </Box>
                                 </Box>
 
-                                {/* Descripción */}
                                 <Typography 
                                     variant="body2" 
                                     sx={{ 
@@ -134,7 +129,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                     {description}
                                 </Typography>
 
-                                {/* Decoración inferior */}
                                 <Box
                                     sx={{
                                         height: '2px',
@@ -147,7 +141,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                             </Stack>
                         </CardContent>
 
-                        {/* Badge flotante para el número de experiencia */}
                         <Box
                             sx={{
                                 position: 'absolute',
@@ -175,7 +168,6 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                     </Card>
                 </Grid2>
                 
-                {/* Spacer para desktop cuando align es left */}
                 {align === "left" && <Grid2 size={{ xs: 0, md: 5 }} />}
             </Grid2>
         </motion.div>

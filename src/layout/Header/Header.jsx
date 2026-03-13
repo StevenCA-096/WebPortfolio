@@ -7,12 +7,25 @@ import { Code } from '@mui/icons-material';
 import ChangeLanguageButton from './ChangeLanguageButton';
 import NavigationMenu from './nav/NavigationMenu';
 import ThemeToggle from './ThemeToggle';
-import { useTheme } from '@mui/material';
+import { alpha, useTheme } from '@mui/material';
 
 const Header = () => {
-    const {theme} = useTheme()
+    const theme = useTheme()
     return (
-        <AppBar color='red' sx={{ boxShadow: 0, zIndex: 20, position: 'relative   ' }}>
+        <AppBar
+            color="transparent"
+            elevation={0}
+            sx={{
+                backgroundColor: 'transparent',
+                backgroundImage: 'none',
+                boxShadow: 0,
+                border: 'none',
+                zIndex: 20,
+                position: 'relative',
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+            }}
+        >
             <Container maxWidth="xxl" disableGutters sx={{px:{xs:0,sm:2}}}>
                 <Toolbar
                     disableGutters
@@ -57,7 +70,13 @@ const Header = () => {
                         display: { xs: 'none', md: 'flex' },
                         position: "absolute",
                         left: "50%",
-                        transform: "translateX(-50%)"
+                        transform: "translateX(-50%)",
+                        px: 2,
+                        py: 1,
+                        borderRadius: '999px',
+                        backgroundColor: alpha(theme.palette.background.default, theme.palette.mode === 'dark' ? 0.1 : 0.3),
+                        backdropFilter: 'blur(16px)',
+                        WebkitBackdropFilter: 'blur(16px)',
                     }}>
                         <NavigationMenu />
                     </Box>

@@ -1,5 +1,5 @@
 // MyProjectImagesModal.jsx
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Dialog, DialogContent, DialogTitle, Box, Typography, Skeleton } from '@mui/material'
 import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
@@ -45,7 +45,7 @@ const imageMap = {
   }
 }
 
-const ImageWithSkeleton = ({ src, alt, onClick, sx }) => {
+const ImageWithSkeleton = ({ src, alt, onClick, sx, imageSx = {} }) => {
   const [loaded, setLoaded] = useState(false)
   const [error, setError] = useState(false)
   const isDarkMode = useIsDarkMode()
@@ -89,7 +89,8 @@ const ImageWithSkeleton = ({ src, alt, onClick, sx }) => {
           },
           ...(error && {
             display: 'none'
-          })
+          }),
+          ...imageSx
         }}
       />
       
@@ -119,8 +120,8 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
   const { t } = useTranslation('projects')
   const isDarkMode = useIsDarkMode()
 
-  const resolvedImages = images
-    .map(imgName => {
+  const resolvedImages = useMemo(() => (
+    images.map(imgName => {
       const projectImages = imageMap[projectFolder]
       if (projectImages && projectImages[imgName]) {
         return projectImages[imgName]
@@ -128,6 +129,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
       return null
     })
     .filter(Boolean)
+  ), [images, projectFolder])
 
   const sliderSettings = {
     dots: true,
@@ -199,7 +201,7 @@ const MyProjectImagesModal = ({ open, images = [], onClose, projectFolder = '' }
                   }}
                 />
               )}
-              
+
               <Box
                 component="img"
                 src={zoomedImage}

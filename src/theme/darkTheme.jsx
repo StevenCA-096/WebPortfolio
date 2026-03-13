@@ -18,10 +18,15 @@ document.head.appendChild(styleSheet);
 // Create MUI theme
 export const darkTheme = createTheme({
   palette: {
+    mode: 'dark',
     text: {
       primary: '#ffff', // Default text color is white
       secondary: "#FFD700",
-      gradient: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 60%, #FFD700 80%)'
+    },
+    gradients: {
+      text: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 60%, #FFD700 80%)',
+      navText: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 55%, #FFD700 100%)',
+      navUnderline: 'linear-gradient(90deg, #FFD700 0%, #FFF4BB 50%, #FFD700 100%)',
     },
     background: {
       default: '#181818', // Base dark background

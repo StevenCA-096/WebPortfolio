@@ -65,7 +65,6 @@
             "imageFolder": "CTPHojancha",
             "techStack": [
                 "React",
-                "Javascript",
                 "Bootstrap",
                 "MySql",
                 "NestJS",
