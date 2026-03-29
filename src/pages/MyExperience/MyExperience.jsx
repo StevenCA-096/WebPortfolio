@@ -19,6 +19,7 @@ const MyExperience = () => {
         sx={{
           position: "relative",
           px: { xs: 0, md: 2 },
+          pl: { xs: 0, md: 2 },
           "&::before": {
             content: '""',
             position: "absolute",
@@ -29,6 +30,7 @@ const MyExperience = () => {
             width: "3px",
             borderRadius: "999px",
             background: "linear-gradient(180deg, rgba(255,215,0,0.08) 0%, rgba(255,215,0,0.85) 18%, rgba(255,244,187,0.95) 50%, rgba(255,215,0,0.85) 82%, rgba(255,215,0,0.08) 100%)",
+            display: { xs: "none", md: "block" },
           },
         }}
       >

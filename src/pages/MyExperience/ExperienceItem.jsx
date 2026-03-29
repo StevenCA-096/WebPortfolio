@@ -7,10 +7,11 @@ import useIsDarkMode from "../../hooks/isDarkMode/useIsDarkMode";
 const ExperienceItem = ({ number, title, description, align, enterprise, startDate, endDate }) => {
     const theme = useTheme();
     const isDarkMode = useIsDarkMode()
+    const isLeftAligned = align === "left";
     
     return (
         <motion.div
-            initial={{ opacity: 0, x: align === "left" ? -50 : 50 }}
+            initial={{ opacity: 0, x: isLeftAligned ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: number * 0.1 }}
             viewport={{ once: true }}
@@ -44,7 +45,8 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                             '&::before': {
                                 content: '""',
                                 position: 'absolute',
-                                [align === "left" ? 'right' : 'left']: -20,
+                                right: { xs: 'auto', md: isLeftAligned ? -20 : 'auto' },
+                                left: { xs: 'auto', md: isLeftAligned ? 'auto' : -20 },
                                 top: '50%',
                                 transform: 'translateY(-50%)',
                                 width: '3px',
@@ -135,7 +137,7 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                         background: 'linear-gradient(90deg, #FFD700 0%, transparent 100%)',
                                         borderRadius: '1px',
                                         width: '60%',
-                                        alignSelf: align === "left" ? 'flex-start' : 'flex-end'
+                                        alignSelf: { xs: 'flex-start', md: isLeftAligned ? 'flex-start' : 'flex-end' }
                                     }}
                                 />
                             </Stack>
@@ -144,8 +146,9 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                         <Box
                             sx={{
                                 position: 'absolute',
-                                top: -8,
-                                [align === "left" ? 'right' : 'left']: -8,
+                                top: { xs: -8, md: -8 },
+                                right: { xs: 'auto', md: isLeftAligned ? -8 : 'auto' },
+                                left: { xs: 'auto', md: isLeftAligned ? 'auto' : -8 },
                                 width: 24,
                                 height: 24,
                                 borderRadius: '50%',
@@ -153,7 +156,8 @@ const ExperienceItem = ({ number, title, description, align, enterprise, startDa
                                 border: `2px solid #FFD700`,
                                 display: 'flex',
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
+                                opacity: { xs: 0, md: 1 }
                             }}
                         >
                             <Box
