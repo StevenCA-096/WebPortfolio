@@ -15,6 +15,13 @@ import DesignServicesIcon from '@mui/icons-material/DesignServices'
 import ComputerIcon from '@mui/icons-material/Computer'
 import RepeatIcon from '@mui/icons-material/Repeat'
 import Restaurant from '@mui/icons-material/Restaurant'
+import AssessmentIcon from '@mui/icons-material/AssessmentOutlined'
+import TimelineIcon from '@mui/icons-material/Timeline'
+import BuildIcon from '@mui/icons-material/Build'
+import EngineeringIcon from '@mui/icons-material/Engineering'
+import SmartToyIcon from '@mui/icons-material/SmartToy'
+import PaidIcon from '@mui/icons-material/Paid'
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
 export const iconMap = {
   Done: DoneIcon,
@@ -33,7 +40,14 @@ export const iconMap = {
   DesignServices: DesignServicesIcon,
   Computer: ComputerIcon,
   Repeat: RepeatIcon,
-  Dining: Restaurant
+  Dining: Restaurant,
+  Assessment: AssessmentIcon,
+  Timeline: TimelineIcon,
+  Build: BuildIcon,
+  Engineering: EngineeringIcon,
+  SmartToy: SmartToyIcon,
+  Paid: PaidIcon,
+  PhoneInTalk: PhoneInTalkIcon
 }
 
 export const GetIconFromIconMap = (iconName) => {

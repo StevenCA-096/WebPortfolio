@@ -2,9 +2,77 @@
     "title": "Projects I Contributed To",
     "projectImages": "Project Images",
     "noAddedImages": "No images added",
-    "developedFeatures":"Features",
-    "techStack":"Technologies",
+    "developedFeatures": "Features",
+    "techStack": "Technologies",
     "myProjects": [
+        {
+            "title": "IFR Pro",
+            "enterprise": "Fruno",
+            "description": "Core management system for mobile device repairs. In this project, I build new features and optimize existing processes within the system, including:",
+            "skills": [
+                {
+                    "icon": "Assessment",
+                    "details": "Reporting: Built reports for internal and external clients with key information about repair cases."
+                },
+                {
+                    "icon": "Timeline",
+                    "details": "Traceability: Tracks each case from intake to delivery, providing visibility into the status of every repair."
+                },
+                {
+                    "icon": "Speed",
+                    "details": "Process Optimization: Developed new features to improve and streamline the system's existing processes."
+                }
+            ],
+            "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
+        {
+            "title": "IFR RCM",
+            "enterprise": "Fruno",
+            "description": "System for managing point-of-sale (POS) terminal repairs, covering the full lifecycle of each device from intake to release. Some of its features include:",
+            "skills": [
+                {
+                    "icon": "Build",
+                    "details": "Repair Management: Controls the diagnosis process, spare parts usage, and special cases during the repair of each POS terminal."
+                },
+                {
+                    "icon": "Engineering",
+                    "details": "Technician Visits: Manages on-site technician visits for cases that must be handled directly at the merchant's location."
+                }
+            ],
+            "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
+        {
+            "title": "IFR Telemarketing",
+            "enterprise": "Fruno",
+            "description": "Telemarketing system where I handle maintenance and build new features, including:",
+            "skills": [
+                {
+                    "icon": "SmartToy",
+                    "details": "RPA Bots: Automated processes involving external systems, reducing manual work and operational errors."
+                },
+                {
+                    "icon": "Paid",
+                    "details": "Commission Reporting: Generated sales commission reports for the telemarketing team."
+                },
+                {
+                    "icon": "PhoneInTalk",
+                    "details": "Call Monitoring: Integrated with phone switchboards (PBX) to monitor calls."
+                }
+            ],
+            "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
         {
             "title": "AF Website",
             "enterprise": "AF Seguros",
@@ -34,11 +102,10 @@
                 "Redux"
             ]
         },
-        
         {
-            "title": "Enrollment and dining System for CTP Hojancha",
+            "title": "Enrollment and Dining System for CTP Hojancha",
             "enterprise": "CTP Hojancha",
-            "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
+            "description": "This project aimed to enable a digital enrollment process instead of a face-to-face one and to manage the school's dining service. During this freelance project, my team and I analyzed and gathered requirements to implement the desired functionalities, which include:",
             "skills": [
                 {
                     "icon": "List",
@@ -54,7 +121,7 @@
                 },
                 {
                     "icon": "Dining",
-                    "details": "Dining Management: Manage the attendances, paymentes, and dining scholarships with reports dedicated to dining data."
+                    "details": "Dining Management: Manages attendance, payments, and dining scholarships, with reports dedicated to dining data."
                 }
             ],
             "images": [

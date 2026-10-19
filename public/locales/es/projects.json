@@ -1,10 +1,78 @@
 {
     "title": "Proyectos donde participé",
-    "projectImages":"Imagenes del proyecto",
-    "noAddedImages":"No hay imagenes agregadas",
-    "developedFeatures":"Características principales",
-    "techStack":"Tecnologías utilizadas",
+    "projectImages": "Imágenes del proyecto",
+    "noAddedImages": "No hay imágenes agregadas",
+    "developedFeatures": "Características principales",
+    "techStack": "Tecnologías utilizadas",
     "myProjects": [
+        {
+            "title": "IFR Pro",
+            "enterprise": "Fruno",
+            "description": "Sistema principal de gestión de reparación de dispositivos celulares. En este proyecto desarrollo nuevas funcionalidades y optimizo procesos existentes dentro del sistema, que incluyen:",
+            "skills": [
+                {
+                    "icon": "Assessment",
+                    "details": "Reportería: Creación de reportes para clientes internos y externos con la información clave de los casos de reparación."
+                },
+                {
+                    "icon": "Timeline",
+                    "details": "Trazabilidad: Seguimiento de cada caso desde su ingreso hasta su entrega, brindando visibilidad del estado de las reparaciones."
+                },
+                {
+                    "icon": "Speed",
+                    "details": "Optimización de procesos: Desarrollo de nuevas funcionalidades para mejorar y agilizar los procesos existentes del sistema."
+                }
+            ],
+            "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
+        {
+            "title": "IFR RCM",
+            "enterprise": "Fruno",
+            "description": "Sistema para la gestión de reparación de datáfonos, que cubre el ciclo completo de cada equipo desde su ingreso hasta su salida. Algunas de sus funcionalidades incluyen:",
+            "skills": [
+                {
+                    "icon": "Build",
+                    "details": "Gestión de reparaciones: Control del proceso de diagnóstico, uso de repuestos y manejo de casos puntuales durante la reparación de cada datáfono."
+                },
+                {
+                    "icon": "Engineering",
+                    "details": "Visitas técnicas: Gestión de visitas de técnicos para los casos que deben atenderse directamente en el comercio."
+                }
+            ],
+            "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
+        {
+            "title": "IFR Telemercadeo",
+            "enterprise": "Fruno",
+            "description": "Sistema de telemercadeo en el que me encargo del mantenimiento y la construcción de nuevas funcionalidades, incluyendo:",
+            "skills": [
+                {
+                    "icon": "SmartToy",
+                    "details": "Bots RPA: Automatización de procesos con sistemas externos, reduciendo el trabajo manual y los errores operativos."
+                },
+                {
+                    "icon": "Paid",
+                    "details": "Reportería de comisiones: Generación de reportes de comisiones de ventas para el equipo de telemercadeo."
+                },
+                {
+                    "icon": "PhoneInTalk",
+                    "details": "Monitoreo de llamadas: Conexión con las centrales telefónicas para el monitoreo de llamadas."
+                }
+            ],
+             "techStack": [
+                "Php",
+                "Docker",
+                "Bootstrap"
+            ]
+        },
         {
             "title": "Sitio Web de AF",
             "enterprise": "AF Seguros",
@@ -16,10 +84,10 @@
                 },
                 {
                     "icon": "ManageAccounts",
-                    "details": "Autogestión de Seguros: Los usuarios podían administrar sus pólizas, revisar sus recibos, presentar reclamaciones y realizar otras operaciones sin intervención del servicio al cliente."
+                    "details": "Autogestión de Seguros: Los usuarios pueden administrar sus pólizas, revisar sus recibos, presentar reclamaciones y realizar otras operaciones sin intervención del servicio al cliente."
                 }
             ],
-            "imageFolder":"AF-Website",
+            "imageFolder": "AF-Website",
             "images": [
                 "desktop/home-colored",
                 "desktop/home-bw",
@@ -37,11 +105,11 @@
         {
             "title": "Sistema de Matrícula y Comedor",
             "enterprise": "CTP Hojancha",
-            "description": "Este proyecto tenía como objetivo permitir un proceso de matrícula digital en lugar de uno presencial y llevar el control de comedor. Durante este proyecto freelance, mi equipo y yo analizamos y recopilamos requisitos para implementar las funcionalidades deseadas, que incluyen:",
+            "description": "Este proyecto tenía como objetivo permitir un proceso de matrícula digital en lugar de uno presencial y llevar el control del comedor. Durante este proyecto freelance, mi equipo y yo analizamos y recopilamos requisitos para implementar las funcionalidades deseadas, que incluyen:",
             "skills": [
                 {
                     "icon": "List",
-                    "details": "Formulario de Matrícula: Creación de un formulario donde los estudiantes pueden, completar su información, la de su responsable, y subir sus documentos."
+                    "details": "Formulario de Matrícula: Creación de un formulario donde los estudiantes pueden completar su información y la de su responsable, y subir sus documentos."
                 },
                 {
                     "icon": "Checklist",
@@ -53,10 +121,10 @@
                 },
                 {
                     "icon": "Dining",
-                    "details": "Gestión: Permite la gestión del comedor, asistencias, pagos, estudiantes becados, y reportesd dedicados al area del comedor"
+                    "details": "Gestión del Comedor: Permite gestionar el comedor, las asistencias, los pagos, los estudiantes becados y los reportes dedicados al área del comedor."
                 }
             ],
-             "images": [
+            "images": [
                 "desktop/dashboard",
                 "mobile/dashboard",
                 "desktop/form",
@@ -90,7 +158,7 @@
                     "details": "Optimización de consultas para mantener Firebase dentro del límite de solicitudes gratuitas, evitando costos adicionales y mejorando la experiencia del usuario."
                 }
             ],
-             "images": [
+            "images": [
                 "desktop/dashboard",
                 "mobile/dashboard",
                 "desktop/module",
