@@ -2,23 +2,30 @@
   "myExperience": "Mi Experiencia",
   "experience": [
     {
+      "title": "Desarrollador Full-Stack",
+      "enterprise": "Fruno",
+      "description": "Como desarrollador full-stack, integro sistemas externos con plataformas legacy mediante APIs y bots RPA, y construyo módulos de reportería y vistas de base de datos optimizadas para ventas y procesos clave del negocio. Asumí las automatizaciones con Python y Playwright de la empresa tras la salida de su responsable, logrando un ahorro de más de 4 horas diarias de trabajo manual. Además, implementé autenticación de dos factores (2FA) para el sistema principal y refactoricé su implementación de seguridad para corregir vulnerabilidades identificadas.",
+      "startDate": "23/03/2026",
+      "endDate": "Presente"
+    },
+    {
       "title": "Desarrollador de Software",
       "enterprise": "AF Seguros",
-      "description": "Como desarrollador de software, estuve a cargo de construir nuevas interfaces de usuario utilizando React y Firebase. En algunos proyectos, también construí APIs REST usando ExpressJS para utilizar Firebase Admin, proporcionar una capa adicional de seguridad y manejar disparadores de Firebase con listeners.",
+      "description": "Como desarrollador de software, construí nuevas interfaces de usuario con React y Firebase, así como APIs REST con ExpressJS que utilizaban Firebase Admin para agregar una capa adicional de seguridad y manejar disparadores de Firebase. Automaticé los despliegues a Firebase Hosting y Functions con GitHub Actions, incluyendo pruebas unitarias y end-to-end con Playwright, optimicé consultas en Firebase para mantener la facturación bajo control e integré servicios de terceros como Brevo y la API de OpenAI.",
       "startDate": "09/12/2024",
-      "endDate": "01/09/2025"
+      "endDate": "10/03/2026"
     },
     {
       "title": "Practicante de Desarrollo de Software",
       "enterprise": "AF Seguros",
-      "description": "Como practicante de desarrollo de software, tuve la oportunidad de colaborar con un equipo de una empresa externa que proporcionaba el servicio de desarrollo. Tuve que completar diferentes tareas trabajando bajo la metodología Scrum con React y Firebase, mientras atendía las decisiones del cliente sobre las aplicaciones en las que estaba involucrado.",
+      "description": "Como practicante de desarrollo de software, colaboré con el equipo de una empresa externa de desarrollo, completando tareas bajo la metodología Scrum con React y Firebase y alineando las aplicaciones con las decisiones y requerimientos del cliente.",
       "startDate": "08/08/2024",
       "endDate": "21/11/2024"
     },
     {
       "title": "Desarrollador Freelance",
       "enterprise": "CTP Hojancha",
-      "description": "Como desarrollador freelance, participé activamente en reuniones con el cliente y el equipo de desarrollo para lograr un sistema de inscripción para una escuela secundaria. Este proyecto fue construido utilizando React, NESTJS y MySQL.",
+      "description": "Como desarrollador freelance, construí un sistema de matrícula y comedor para un colegio técnico utilizando React, NestJS y MySQL, trabajando directamente con el cliente y el equipo de desarrollo. Implementé comunicación en tiempo real con WebSockets para actualizar dinámicamente los cupos de las secciones, creé procedimientos almacenados para reportería y entregué el proyecto con Docker.",
       "startDate": "01/06/2024",
       "endDate": "01/12/2024"
     }

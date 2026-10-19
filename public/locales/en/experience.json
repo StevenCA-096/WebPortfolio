@@ -5,7 +5,7 @@
       "title": "Full-Stack Developer",
       "enterprise": "Fruno",
       "description": "As a full-stack developer, I integrate external systems with legacy platforms through APIs and RPA bots, and build reporting modules and optimized database views for sales and core business processes. I took ownership of the company's Python and Playwright automations after the previous owner left, saving over 4 hours of manual work per day. I also implemented two-factor authentication (2FA) for the core system and refactored its security implementation to address identified vulnerabilities.",
-      "startDate": "01/03/2026",
+      "startDate": "23/03/2026",
       "endDate": "Present"
     },
     {
@@ -13,7 +13,7 @@
       "enterprise": "AF Seguros",
       "description": "As a software developer, I built new user interfaces with React and Firebase, as well as REST APIs with ExpressJS that used Firebase Admin to add an extra security layer and handle Firebase triggers. I automated deployments to Firebase Hosting and Functions with GitHub Actions, including unit and end-to-end tests with Playwright, optimized Firebase queries to keep billing under control, and integrated third-party services such as Brevo and the OpenAI API.",
       "startDate": "09/12/2024",
-      "endDate": "01/09/2025"
+      "endDate": "10/03/2026"
     },
     {
       "title": "Software Developer Intern",
